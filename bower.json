@@ -1,7 +1,8 @@
 {
-  "name": "chaplin-boilerplate",
+  "name": "unTransit",
   "version": "0.1.0",
   "main": "index.js",
+  "protocol":"https",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,6 +16,7 @@
     "lodash": "~2.4.1",
     "jquery": "~2.0.3",
     "requirejs-text": "~2.0.9",
-    "handlebars": "~1.0.0"
+    "handlebars": "~1.0.0",
+    "bootstrap": "~3.1.1"
   }
 }
