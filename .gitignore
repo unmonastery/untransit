@@ -5,3 +5,4 @@ git add -f bower_components/handlebars/handlebars.js
 git add -f bower_components/requirejs-text/text.js
 git add -f bower_components/chaplin/chaplin.js
 bower_components/
+.DS_Store
