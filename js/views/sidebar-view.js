@@ -6,7 +6,8 @@ define([
   'views/base/view',
   'models/stop',
   'text!templates/sidebar.hbs',
-  'text!templates/stop-time.hbs'
+  'text!templates/stop-time.hbs',
+  '../../lib/easy-button'
 ], function($, moment, Chaplin, sidebar, View, Stop, template, timeTmpl) {
   'use strict';
 
@@ -78,13 +79,26 @@ define([
       });
       this.map.addControl( this.sidebar );
 
+      L.easyButton(
+          'fa-info', 
+           function (){
+              self.open();
+           },
+          '',
+          this.map
+      ).setPosition('topright');
+
+
       this.sidebar.on('hidden', function () {
-        Chaplin.mediator.publish('unselect:all');
+        // Chaplin.mediator.publish('unselect:all');
       });
     },
 
     open: function(stop){
+      this.sidebar.show();
+    },
 
+    select: function(stop){
       Chaplin.mediator.publish('unselect:all');
 
       this.model.set( stop.toJSON() );
@@ -92,11 +106,13 @@ define([
       this.model.relations.times.fetch({
         eager:true
       });
-      this.sidebar.show();
+
+      this.$('.alert').hide();
+
+      this.open();
     },
 
     close: function(){
-      Chaplin.mediator.publish('unselect:all');
       this.sidebar.close();
     },
 
@@ -106,6 +122,11 @@ define([
       this.$('.arrivals a.active').removeClass('active');
       target.addClass('active');
       Chaplin.mediator.publish('select:route', shapeId);
+      e.preventDefault();
+    },
+
+    onTogglePanel: function(e){
+      this.sidebar.show();
       e.preventDefault();
     }
 

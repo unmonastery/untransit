@@ -107,7 +107,7 @@ define([
            marker = L.marker(latlng, {
             icon:createIcon(currentZoom)
           }).on('click', function(){
-            sidebar.open(stop);
+            sidebar.select(stop);
             map.panTo(latlng);
           })
           .addTo(map);
@@ -165,6 +165,10 @@ define([
       for (key in this.polylines){
         this.lowlightRoute( key );
       }
+    },
+
+    onTogglePanel: function(){
+      alert('hey!');
     }
 
   });
