@@ -66,7 +66,7 @@ define([
       data = storage.get( this.collection );
       data = _.where(data, query );
       this.set(data[0], options);
-      if (options.eager){
+      if (options && options.eager){
         if (!model.relations) return;
         for (key in model.relations){
           // TODO better: return model

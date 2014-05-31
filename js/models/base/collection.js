@@ -30,17 +30,9 @@ define([
 
       this.reset(data, {reset:false});
 
-      if (options.eager){
+      if (options && options.eager){
         this.forEach( function(model){
           model.fetch({eager:true});
-          /* var key;
-          if (!model.relations) return;
-          for (key in model.relations){
-            model.relations[ key ]().fetch({
-              success: function(item){
-                model.set( key, item.toJSON() );
-              }
-            });*/
         });
       }
         

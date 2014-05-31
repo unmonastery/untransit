@@ -1,11 +1,13 @@
 define([
+  'jquery',
   'moment',
+  'chaplin',
   'sidebar',
   'views/base/view',
   'models/stop',
   'text!templates/sidebar.hbs',
   'text!templates/stop-time.hbs'
-], function(moment, sidebar, View, Stop, template, timeTmpl) {
+], function($, moment, Chaplin, sidebar, View, Stop, template, timeTmpl) {
   'use strict';
 
   function isAboutNow( time ){
@@ -41,6 +43,10 @@ define([
     // In the end you might want to used precompiled templates.
     template: template,
 
+    events: {
+      'click .arrivals a': 'onSelectTrip'
+    },
+
     initialize: function(options){
       var self = this;
       this.map = options.map;
@@ -53,20 +59,13 @@ define([
       this.on('renderedSubview', function(){
 
         self.$('.arrivals a').each(function(index, item){
-          var target = $(item),
+          var target = $(item), offset,
               value  = target.data('value');
           if ( isAboutNow(value) ){
-            target.addClass('active');
+            offset = target.position().top;
+            self.$('.arrivals').scrollTop(offset - 100); 
           }
         });
-
-          var active = self.$('.arrivals a.active'),
-          offset;
-          if ( active.length == 0 ){
-            return;
-          }
-          offset = active.position().top;
-          self.$('.arrivals').scrollTop(offset - 100); 
       
       });
     },
@@ -91,6 +90,15 @@ define([
 
     close: function(){
       this.sidebar.close();
+    },
+
+    onSelectTrip: function(e){
+      var target = $(e.currentTarget),
+          shapeId = target.data('shape-id');
+      this.$('.arrivals a.active').removeClass('active');
+      target.addClass('active');
+      Chaplin.mediator.publish('select:route', shapeId);
+      e.preventDefault();
     }
 
   });

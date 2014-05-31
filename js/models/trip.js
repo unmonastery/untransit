@@ -1,7 +1,8 @@
 define([
   'models/base/model',
-  'models/route'
-], function(Model, Route) {
+  'models/route',
+  'models/shape'
+], function(Model, Route, Shape) {
   'use strict';
 
 
@@ -10,7 +11,8 @@ define([
   	name:'trip',
     collection:'trips',
     relations:{
-      route:Route
+      route:Route/* ,
+      shape:Shape*/
     }
     
   });

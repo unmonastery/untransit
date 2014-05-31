@@ -1,7 +1,5 @@
 clean code
 
-push
-
 update current time every min
 
 find some trick to load times faster
