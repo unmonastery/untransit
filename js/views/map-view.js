@@ -34,6 +34,12 @@ define([
     
   };
 
+  function calculateSize(zoom){
+      // 200 : 12, 10 : 18
+      // assume linear, not best option!
+      return  (-95*zoom+1740)/3;
+  };
+
   var MapView = View.extend({
     // Automatically render after initialize
     autoRender: true,
@@ -80,22 +86,31 @@ define([
         map: this.map
       });
 
+      this.placeHolder = L.circle([0,0], 
+        calculateSize( this.map.getZoom() ),{
+          color: 'red',
+          fillColor: '#f03',
+          fillOpacity: 0.5
+      });
+      // this.placeHolder.addTo(this.map);
+
       this.collections.stops.fetch({reset:true});
       this.collections.shapes.fetch({reset:true});
 
-      var map = this.map, markers = this.markers, marker;
+      var map = this.map, markers = this.markers, marker, placeHolder = this.placeHolder;
       map.on('zoomend', function() {
         var currentZoom = map.getZoom(), key;
         for (key in markers ){
           marker = markers[key];
           marker.setIcon( createIcon(currentZoom) );
         }
+        placeHolder.setRadius( calculateSize(currentZoom) );
       });
     
     },
 
     update: function(){
-      var map = this.map, markers = this.markers,
+      var map = this.map, markers = this.markers, placeHolder = this.placeHolder,
           sidebar = this.sidebar,
           bounds = L.latLngBounds([]);
       this.collections.stops.forEach(function(stop){
@@ -106,9 +121,11 @@ define([
         if (!markers[ stop.get('stop_id') ]){
            marker = L.marker(latlng, {
             icon:createIcon(currentZoom)
-          }).on('click', function(){
+          }).on('click', function(e){
             sidebar.select(stop);
             map.panTo(latlng);
+            placeHolder.setLatLng(latlng);
+            placeHolder.addTo(map);
           })
           .addTo(map);
           markers[ stop.get('stop_id') ] = marker;
