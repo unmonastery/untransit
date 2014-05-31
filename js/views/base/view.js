@@ -1,8 +1,9 @@
 define([
+  'underscore',
   'handlebars',
   'chaplin',
   'lib/view-helper' // Just load the view helpers, no return value
-], function(Handlebars, Chaplin) {
+], function(_, Handlebars, Chaplin) {
   'use strict';
 
   var View = Chaplin.View.extend({
@@ -40,6 +41,45 @@ define([
       }
 
       return templateFunc;
+    },
+
+    render: function(){
+      var view, self = this;
+      this.preRender();
+      view = Chaplin.View.prototype.render.apply(this, arguments);
+      view.on('addedToDOM', function(){
+        self.postRender();
+      })
+      return view;
+    },
+
+    postRender: function(){
+
+    },
+
+    preRender: function(){
+
+    },
+
+    pass: function(selector, attribute, template){
+      var $el, self = this;
+      if (!this.model) return;
+      $el = this.$(selector);
+      if ($el){
+        $el.text( this.model.get(attribute) );
+      }
+      this.listenTo( this.model, "change:" + attribute, function(model, value){
+        if (_.isArray(value) ){
+          this.$(selector).empty();
+          _.each( value, function(item){
+            self.$(selector).append( Handlebars.compile(template).call(self, item) );
+          });
+          self.trigger('renderedSubview');
+        } else {
+          this.$(selector).text(value);
+        }
+      });
+
     }
   });
 

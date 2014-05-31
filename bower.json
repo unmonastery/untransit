@@ -17,6 +17,9 @@
     "jquery": "~2.0.3",
     "requirejs-text": "~2.0.9",
     "handlebars": "~1.0.0",
-    "bootstrap": "~3.1.1"
+    "bootstrap": "~3.1.1",
+    "leaflet":"~0.7",
+    "comma-separated-values":"*",
+    "moment":"*"
   }
 }

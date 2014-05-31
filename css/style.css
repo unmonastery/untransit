@@ -1,0 +1,21 @@
+html, body, #site-container, #main-container, #main-container > div {
+	height:100%; 
+	width:100%;
+	margin: 0;
+}
+
+#map {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-toolbar {
+	margin-bottom: 10px;
+}
+
+.arrivals {
+   /* Optional - You can set a  min-height : whatever px; for reserving some space*/
+   height: 300px; /* Fix a height here */
+   overflow: auto; /* Optionally you can also use overflow: scroll; */
+}

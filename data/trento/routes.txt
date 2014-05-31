@@ -1,0 +1,36 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color,service_type, from, to
+393,12,A,P.Dante Osp.S.Chiara Clarina P.Dante,3,BABAB7,000000,urban,Trento,Trento
+394,12,1,Roncafort P.Dante Osp.S.Chiara Roncafort,3,1D3F72,FFFFFF,urban,Trento,Trento
+395,12,2,Vela P.Dante Osp.S.Chiara P.Dante Vela,3,DB5826,FFFFFF,urban,Trento,Trento
+396,12,3,Cortesano Gardolo P.Dante Villazzano 3,3,C52720,FFFFFF,urban,Trento,Trento
+398,12,4,Piazza Dante Via Degasperi Madonna Bianca,3,007BC3,FFFFFF,urban,Trento,Trento
+400,12,5,Piazza Dante P.Fiera Povo Oltrecastello,3,F5C500,000000,urban,Trento,Trento
+402,12,7,Canova Melta Piazza Dante Gocciadoro,3,0A9B86,FFFFFF,urban,Trento,Trento
+404,12,8,Centochiavi Piazza Dante Mattarello,3,52332A,FFFFFF,urban,Trento,Trento
+406,12,9,P.Dante S.Donà Cognola Villamontagna,3,8B4E2B,FFFFFF,urban,Trento,Trento
+408,12,10,P.Dante Martignano Cognola / Montevaccino,3,0A5543,FFFFFF,urban,Trento,Trento
+411,12,12,P.Dante Via Ghiaie Ravina Romagnano,3,95293B,FFFFFF,urban,Trento,Trento
+415,12,14,P.Dante Via Sanseverino Belvedere Ravina,3,E490B0,000000,urban,Trento,Trento
+417,12,17,Lavis S.Lazzaro Piazza Dante,3,1F9ACF,FFFFFF,urban,Trento,Trento
+419,12,6,Sopramonte P.Dante Villazzano Grotta,3,70B442,FFFFFF,urban,Trento,Trento
+423,12,B,Piazza Dante Laste Piazza Dante,3,6E777B,FFFFFF,urban,Trento,Trento
+424,12,11,Spini Di Gardolo Via Brennero P.Dante,3,582E79,FFFFFF,urban,Trento,Trento
+460,12,NP,Navetta Parcheggi: Zuffo M.Te Baldo Zuffo,3,000000,FFFFFF,urban,Trento,Trento
+466,12,13,P.Dante Rosmini S.Rocco Povo Polo Soc.,3,BF6092,000000,urban,Trento,Trento
+478,12,15,Piazza Dante Interporto Spini Di Gardolo,3,72E006,FFFFFF,urban,Trento,Trento
+484,12,16,Centochiavi Martignano Cognola Povo,3,3564B1,FFFFFF,urban,Trento,Trento
+486,12,A,Brione S.Giorgio Lizzana P.Guella,3,,,urban,Rovereto,Rovereto
+488,12,1,01 Corso Bettini Ospedale Lizzana Marco,3,,,urban,Rovereto,Rovereto
+490,12,2,Costa Corso Rosmini S.Giorgio,3,,,urban,Rovereto,Rovereto
+496,12,6,06 Nomi Pomarolo/Volano Rosmini Mori,3,,,urban,Rovereto,Rovereto
+497,12,5,Mori Villa Lagarina Pomarolo Nomi,3,,,urban,Rovereto,Rovereto
+504,12,N2,Costa Corso Rosmini,3,,,urban,Rovereto,Rovereto
+506,12,N1,Mori Marco Corso Rosmini,3,,,urban,Rovereto,Rovereto
+507,12,N3,P.Le Orsi Volano Castellano,3,,,urban,Rovereto,Rovereto
+510,12,N5,C.So Bettini Isera Nomi,3,,,urban,Rovereto,Rovereto
+511,12,N6,Nomi Besenello V.Cesari,3,,,urban,Rovereto,Rovereto
+512,12,7,Noriglio Rosmini Campana Dei Caduti,3,,,urban,Rovereto,Rovereto
+527,12,3,03 Pedersano Nogaredo Rosmini Lenzima,3,,,urban,Rovereto,Rovereto
+529,12,4,04 Noarna S.Ilario Isera Villa Lagarina,3,,,urban,Rovereto,Rovereto
+531,12,Fu,Funivia Trento Sardagna,5,,,other,Trento,Trento
+533,12,C,Rsa S.Bartolomeo Rsa Ex Ospedalino,3,000000,FFFFFF,urban,Trento,Trento

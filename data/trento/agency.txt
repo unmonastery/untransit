@@ -1,0 +1,2 @@
+﻿agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_lang
+12,Trentino trasporti esercizio S.p.A.,http://www.ttesercizio.it,Europe/Rome,+39 0461 821000,it

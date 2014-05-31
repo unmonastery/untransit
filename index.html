@@ -3,7 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Chaplin Boilerplate Application</title>
-  <style>body { font-family: sans-serif; }</style>
+  
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/css/L.Control.Sidebar.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/maki-sprite.css" />
+
+  <!-- TODO understand why require does not work for this -->
+  <script src="bower_components/comma-separated-values/csv.js"></script>
+
   <script src="bower_components/requirejs/require.js"></script>
   <script>
   // Configure the AMD module loader
@@ -15,9 +25,14 @@
       jquery: '../bower_components/jquery/jquery',
       underscore: '../bower_components/lodash/dist/lodash',
       backbone: '../bower_components/backbone/backbone',
+      bootstrap: '../bower_components/bootstrap/dist/js/bootstrap',
       handlebars: '../bower_components/handlebars/handlebars',
+      leaflet: '../bower_components/leaflet/dist/leaflet',
       text: '../bower_components/requirejs-text/text',
-      chaplin: '../bower_components/chaplin/chaplin'
+      chaplin: '../bower_components/chaplin/chaplin',
+      sidebar: '../lib/L.Control.Sidebar',
+      csv: '../bower_components/comma-separated-values/csv',
+      moment: '../bower_components/moment/moment'
     },
     // Underscore and Backbone are not AMD-capable per default,
     // so we need to use the AMD wrapping of RequireJS
@@ -31,6 +46,9 @@
       },
       handlebars: {
         exports: 'Handlebars'
+      },
+      sidebar: {
+        deps: ['leaflet']
       }
     }
     // For easier development, disable browser caching

@@ -1,0 +1,1017 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon
+1,Baselga Del Bondone,,46.078317,11.046924
+2,Baselga Del Bondone,,46.078581,11.047541
+3,Belvedere,,46.044406,11.105342
+4,Lamar Ponte Avisio,,46.134620,11.110914
+5,Sp 85 Bivio Sopramonte,,46.085226,11.069313
+7,Maso Bolleri,,46.102485,11.124174
+8,Maso Bolleri,,46.102234,11.123940
+9,Borino,,46.067367,11.165050
+10,Cadine Strada Gardesana,,46.088630,11.065018
+11,Cadine Strada Gardesana,,46.088729,11.064509
+12,Canova Paludi,,46.099170,11.109314
+13,Gardolo "Materna Paludi",,46.103846,11.108235
+14,Centro Commerciale,,46.091584,11.105652
+15,Asiago S.Bartolameo,,46.047972,11.137456
+16,Asiago Banala,,46.047681,11.137741
+17,Cognola "Toresela",,46.078904,11.153473
+18,Cognola "Toresela",,46.078863,11.153929
+19,Cognola Bivio Civezzano,,46.080613,11.158419
+20,Cognola Bivio Civezzano,,46.080472,11.158403
+21,Cognola "Centro Civico",,46.076472,11.141513
+22,Cognola Grezoni,,46.075911,11.146833
+23,Cognola Grezoni,,46.076012,11.146613
+24,San Vito,,46.075332,11.139033
+25,Cognola S.Vito,,46.075696,11.140797
+26,Cognola S.Vito,,46.075623,11.141786
+27,San Vito,,46.075433,11.138833
+28,Cognola "Scuole",,46.075698,11.143991
+29,Cognola "Scuole",,46.075853,11.144062
+30,Cognola Alla Veduta "Roza",,46.077564,11.151102
+31,Cognola Alla Veduta "Roza",,46.078007,11.151432
+32,Brescia "Villa Salvotti",,46.076123,11.101184
+37,Degli Alpini Oberziner,,46.078759,11.118392
+38,Cortesano,,46.124481,11.133818
+39,Vigo Meano Alle Gorghe,,46.129889,11.134571
+40,Vigo Meano Alle Gorghe,,46.129522,11.134680
+43,"Forte Bus De Vela",,46.084969,11.070113
+46,Gabbiolo "Campo Sportivo",,46.055265,11.148982
+47,Gabbiolo "Campo Sportivo",,46.055310,11.148782
+48,Sp 76 Carpenedi,,46.117195,11.108678
+49,Sp 76 Carpenedi,,46.117171,11.108438
+50,Gardolo S.Anna,,46.111144,11.109544
+51,Gardolo S.Anna,,46.110834,11.109573
+52,Gardolo P.Le Neufahrn Sud,,46.106559,11.111466
+53,Gardolo P.Le Neufahrn Nord,,46.106678,11.111444
+54,Gardolo Piazza Libertà,,46.108340,11.111719
+55,Gardolo Piazza Chiesa,,46.108506,11.111436
+56,Canova Aichner,,46.101856,11.103284
+57,Canova Via Della Canova,,46.099689,11.107570
+58,Gardolo Don Milani 8 Marzo,,46.103934,11.117583
+59,Gardolo Don Milani "Piscina",,46.106686,11.114327
+60,Gardolo Don Milani "Piscina",,46.106749,11.114389
+61,Gardolo Don Milani 8 Marzo,,46.104204,11.117281
+62,Gardolo S.Anna Carpenedi,,46.113805,11.107364
+63,Gardolo S.Anna Carpenedi,,46.113682,11.107300
+64,Gardolo Soprasasso,,46.106227,11.109072
+65,Gazzadina Strada Vecchia,,46.130109,11.126043
+66,Gazzadina Al Pontat,,46.128445,11.129219
+67,Gazzadina Al Pontat,,46.128599,11.129270
+68,Gazzadina Strada Vecchia,,46.130190,11.125945
+69,Grotta Piazza,,46.045800,11.151130
+70,Grotta Bindesi,,46.043392,11.151716
+71,Grotta Bindesi,,46.043502,11.151592
+72,Ss 12 "Zona Ind.Le Ftm",,46.119309,11.106123
+73,Lamar "Ftm",,46.125715,11.107713
+74,Lamar "Ftm",,46.125960,11.107593
+75,Lamar "Sottostazione Enel",,46.129241,11.109763
+76,Largo Sauro,,46.074848,11.124976
+77,Lavis "Stazione Ftm",,46.138664,11.108989
+78,Lavis Piazza Mercato,,46.137921,11.114458
+79,Lavis "Municipio",,46.139321,11.111958
+80,Lavis Rosmini Segantini,,46.142197,11.108508
+81,Lavis Cembra,,46.143164,11.106402
+85,Centochiavi Dalla Fior,,46.094611,11.120675
+86,Centochiavi Chiocchetti,,46.093993,11.120699
+87,Melta "Case Itea",,46.102271,11.118109
+88,"Parco di Melta",,46.097274,11.119767
+89,Melta Centro,,46.099443,11.119089
+90,Melta Centro,,46.100104,11.118730
+91,"Parco di Melta",,46.097239,11.119901
+92,Bettini "Madonna Bianca",,46.042500,11.132908
+93,Stella "S.Gaetano",,46.036416,11.130367
+94,Ss 12 "Casteller",,46.025284,11.132751
+95,Ss 12 "Casteller",,46.025707,11.132791
+96,Madonna Bianca "S.Gaetano",,46.038012,11.130695
+97,Stella Marighetto,,46.034256,11.131509
+98,Madonna Bianca "Man",,46.040293,11.130341
+99,Ss 12 "Le Caverne",,46.030862,11.132677
+100,Ss 12 "Le Caverne",,46.030338,11.132911
+101,Martignano Formigheta,,46.089121,11.133090
+102,Martignano Formigheta,,46.089134,11.133216
+103,Martignano "Chiesa",,46.088732,11.130604
+104,Sp 131 "Maso Pradiscola",,46.083189,11.135736
+105,Sp 131 "Maso Pradiscola",,46.083255,11.135874
+106,Martignano P.Zza Menghin,,46.090240,11.131628
+107,Martignano P.Zza Menghin,,46.090275,11.131460
+108,Martignano Piazza Canopi,,46.089343,11.131031
+109,Sp 131 "Res. Silvana",,46.097726,11.126962
+110,Sp 131 "Res. Silvana",,46.097493,11.126925
+111,Martignano Ai Bolleri,,46.094491,11.130145
+112,Martignano Ai Bolleri,,46.094872,11.129322
+113,Sopramonte "Maso Banal",,46.068953,11.063564
+115,Sp 131 Al Maso Specchio,,46.104391,11.123568
+116,Sp 131 Al Maso Specchio,,46.104353,11.123420
+117,Ravina "Maso Stella",,46.032355,11.112678
+118,Ravina "Maso Stella",,46.032555,11.112930
+119,Mattarello Piazza Perini,,46.006903,11.128338
+120,Mattarello Via Nazionale,,46.012407,11.130564
+121,Mattarello Via Nazionale,,46.011659,11.130375
+122,Mattarello "Regole",,46.013560,11.131498
+123,Mattarello "Ronchi",,46.017244,11.132399
+124,Mattarello "Ronchi",,46.017362,11.132609
+125,Mattarello S.Leonardo,,46.006454,11.127627
+126,Mattarello Catoni,,46.009394,11.128820
+127,Mattarello Catoni,,46.009380,11.128974
+128,Mattarello Sud,,46.003128,11.126824
+129,Meano Bivio S.Lazzaro,,46.128303,11.115281
+130,Meano Bivio S.Lazzaro,,46.127538,11.115265
+131,Sp 76 "Piac",,46.126690,11.114532
+133,Sp 76 "Maregioli",,46.130755,11.121750
+134,Sp 76 "Maregioli",,46.130836,11.121666
+135,Meano "Campo Sportivo",,46.128279,11.120267
+136,Meano "Campo Sportivo",,46.128310,11.119721
+137,Meano "Cimitero",,46.125736,11.118419
+138,Meano "Cimitero",,46.125483,11.118320
+139,Sp 76 "Via Rossa",,46.119858,11.111416
+140,Sp 76 "Via Rossa",,46.119812,11.111266
+141,Meano Piazza Dell'assunta,,46.122688,11.116846
+142,Meano Portoni,,46.123624,11.116855
+143,Sp 76 Dos di Lamar,,46.124939,11.113463
+144,Sp 76 Dos di Lamar,,46.124718,11.113018
+145,Mesiano "Fac. Ingegneria",,46.067391,11.138805
+146,Mesiano "Fac. Ingegneria",,46.067198,11.139497
+147,Mesiano "Stazione Fs",,46.064947,11.141689
+148,Mesiano "Stazione Fs",,46.065068,11.141726
+149,Povo Valoni,,46.065698,11.146418
+150,Povo Valoni,,46.065746,11.146326
+151,Montevaccino,,46.108340,11.142765
+152,Montevaccino di Sotto,,46.109439,11.139972
+153,Montevaccino di Sotto,,46.109508,11.140097
+154,Sp 131 "Paganin",,46.106288,11.137610
+155,Sp 131 "Paganin",,46.106524,11.137306
+156,M.Vaccino "Maso Librar",,46.110418,11.138435
+157,M.Vaccino "Maso Librar",,46.110776,11.138074
+158,Ss 45 "Montevideo",,46.080499,11.098333
+159,Villazzano Valnigra,,46.052092,11.146621
+160,Villazzano Valnigra,,46.052181,11.146486
+161,Oltrecastello,,46.072808,11.161957
+162,F.Lli Fontana Gen. Cantore,,46.076802,11.119114
+163,Piazza Dante "Palazzo Pat",,46.072304,11.120426
+164,Piazza Duomo,,46.067600,11.121798
+165,Piazza di Fiera,,46.065221,11.123271
+166,S.Francesco Porta Nuova,,46.066776,11.126346
+167,Piazza Vicenza,,46.062137,11.132764
+168,Piazza Vicenza,,46.062292,11.132772
+169,Piazzale A22,,46.077292,11.111111
+171,Brescia "Piedicastello",,46.070808,11.112292
+172,Brescia "Piedicastello",,46.070494,11.111383
+173,Tanzengiale Ovest Pezcoller,,46.047739,11.113564
+174,"Ponte Lodovico",,46.069352,11.138957
+175,"Ponte Lodovico",,46.069523,11.140201
+176,Venezia "Port'aquila",,46.069865,11.128221
+177,Cervara "Port'aquila",,46.070179,11.128083
+178,Cervara "Port'aquila",,46.070164,11.127890
+179,Spré Pinara,,46.067264,11.160937
+180,Spré Pinara,,46.067264,11.160807
+181,Povo "Casa di Riposo",,46.065663,11.159678
+182,Povo "Casa di Riposo",,46.065594,11.159530
+183,Povo "Centro Civico",,46.064162,11.152006
+184,Povo "Centro Civico",,46.063862,11.151912
+185,Povo S.Agata,,46.066291,11.156494
+186,Povo Piazza Manci,,46.065806,11.154617
+187,Povo Piazza Manci,,46.065955,11.154596
+188,Povo "Fac. Scienze",,46.063289,11.150005
+189,Povo "Fac. Scienze",,46.063316,11.150209
+190,Povo "Polo Sociale",,46.065442,11.157973
+191,Povo "Polo Sociale",,46.065632,11.157936
+192,Ravina Masere,,46.039165,11.111935
+193,Ravina Masere,,46.039202,11.112293
+194,Ravina "Case Itea",,46.037329,11.114043
+195,Ravina "Case Itea",,46.037940,11.114062
+196,Ravina Chiesa,,46.037726,11.107755
+197,Ravina Piazza,,46.037878,11.108509
+198,Ravina Per Belvedere,,46.041292,11.106159
+199,Ravina Per Belvedere,,46.041001,11.106237
+200,Ravina Del Ponte,,46.043295,11.112317
+201,Ravina Del Ponte,,46.041069,11.113117
+202,Piazza Dante "Pal. Regione",,46.071711,11.121389
+203,Romagnano Nord,,46.020174,11.110857
+204,Romagnano Nord,,46.019954,11.110897
+205,Romagnano Fontanelle,,46.015323,11.107087
+206,Romagnano Fontanelle,,46.014633,11.106836
+207,Romagnano 7 Fontane,,46.014689,11.105064
+208,Romagnano Piazza Condini,,46.017751,11.105818
+209,Romagnano Sud,,46.012857,11.105449
+210,Romagnano Sud,,46.012091,11.104952
+211,Romagnano Rimoni,,46.016782,11.108221
+212,Romagnano Rimoni,,46.016488,11.108269
+213,Roncafort,,46.101271,11.101583
+214,Ss 12 "Zona Ind.Le Ftm",,46.120242,11.105822
+215,Povo Salé,,46.062029,11.151722
+216,Povo Salé,,46.062016,11.150851
+217,Verona "S.Bartolameo",,46.050720,11.130389
+218,Verona "S.Bartolameo",,46.050943,11.130473
+219,San Donà,,46.071656,11.138308
+220,San Donà "Chiesa",,46.072152,11.138406
+222,San Donà,,46.070879,11.139532
+223,Lamar Sponda Trentina,,46.134588,11.111690
+224,San Lazzaro Ponte Avisio,,46.137885,11.118354
+226,San Rocco Torricelle,,46.038541,11.145521
+227,San Rocco Piazza,,46.036364,11.146158
+228,Piazza Madonna Delle Laste,,46.074103,11.135256
+229,Sopramonte Piazza Oveno,,46.071317,11.059207
+230,Sopramonte Bivio Baselga,,46.075572,11.058469
+231,Sopramonte Bivio Baselga,,46.075783,11.058721
+232,Sopramonte "Valle",,46.075836,11.056024
+233,Sopramonte "Valle",,46.075950,11.055788
+234,Sopramonte "Novai",,46.067706,11.061545
+235,Sopramonte Piazza Oveno,,46.071151,11.059520
+236,Sopramonte "Bunaga",,46.069103,11.056869
+237,Sopramonte "Bunaga",,46.069730,11.057698
+238,Spini di Gardolo,,46.121729,11.089889
+239,Spini "Whirpool",,46.118504,11.096131
+240,Spini "Whirpool",,46.118550,11.096708
+241,Spini "Brenta",,46.118623,11.092766
+242,Spini "Brenta",,46.118581,11.092616
+243,Spré S.Lucia,,46.069294,11.161412
+244,Spré S.Lucia,,46.069214,11.161151
+245,Sp 85 "Soraval",,46.083258,11.063955
+246,Sp 85 "Soraval",,46.083094,11.063877
+247,Piazza Dante "Stazione Fs",,46.071917,11.119568
+248,Tavernaro Centro,,46.081448,11.154819
+249,Tavernaro Centro,,46.081538,11.154897
+250,Tavernaro "Salet",,46.081815,11.157965
+251,Tavernaro "Salet",,46.082026,11.158507
+252,Tavernaro "Villa Clementi",,46.080906,11.157521
+253,Tavernaro "Villa Clementi",,46.081266,11.155969
+254,Vela Centro,,46.082085,11.102047
+255,Vela Alla Scala,,46.078955,11.103563
+256,Vela Alla Scala,,46.078841,11.103473
+257,Gardolo 4 Nov. Canova,,46.098861,11.112925
+258,Gardolo 4 Nov. "Piscina",,46.104288,11.112963
+259,Gardolo 4 Nov. Soprasasso,,46.106560,11.112346
+260,Adamello Gorizia,,46.059853,11.132395
+261,Gardolo "Stazione Ftm",,46.107233,11.103861
+262,M. Rossi "Stella D.Mattino",,46.107384,11.101204
+263,M. Rossi "Stella D.Mattino",,46.107331,11.100406
+264,Al Desert Muredei,,46.051409,11.117370
+265,Al Desert Muredei,,46.050987,11.117056
+266,Al Desert Ragazzi Del '99,,46.046952,11.115704
+267,Al Desert Ragazzi Del '99,,46.047147,11.115661
+268,Ambrosi "Caserma Vvff",,46.076743,11.123158
+269,Apuleio "Case Degasperi",,46.073284,11.115482
+270,Apuleio "Ponte S.Giorgio",,46.076220,11.115030
+271,Asiago "Cernidor",,46.050242,11.137200
+272,Asiago "Bellevue",,46.053348,11.136344
+273,Asiago "Bellevue",,46.053209,11.136495
+274,Asiago "Cernidor",V.Asiago Fr.Civ. 6 Ang.V.De La Toresela,46.049550,11.137273
+275,"Castello Buonconsiglio",,46.070312,11.126964
+276,Sanzio "Castello",,46.071906,11.126021
+277,Barbacovi "Itg Pozzo",,46.064329,11.129974
+278,Ss 47 Muralta,,46.077059,11.131773
+279,Martignano Capitel,,46.082132,11.127158
+280,Martignano Capitel,,46.081762,11.126874
+281,Bettini "Nido Mad. Bianca",,46.040477,11.135351
+282,Bettini "Nido Mad. Bianca",,46.040082,11.135431
+283,Bezzi Filzi,,46.058467,11.119271
+284,Bolghera "S.Antonio",,46.058155,11.131199
+285,Lamar "Sottostazione Enel",,46.130819,11.110121
+286,Ss 12 "Pioppeto",,46.108369,11.108528
+287,Ss 12 Bivio Meano,,46.116062,11.106197
+288,Ss 12 Canova,,46.098985,11.111739
+289,Ss 12 "Paludi",Via Bolzano Incrocio Via Noce,46.102643,11.110490
+290,Ss 12 Canova,,46.100264,11.111578
+291,Brennero "Bren Center",,46.091361,11.115392
+292,Brennero "Bren Center",,46.091461,11.115591
+293,Brennero Marconi,,46.082901,11.120503
+294,Brennero Malvasia,,46.077969,11.123274
+295,Brennero Marconi,,46.083720,11.119823
+296,Brennero "Magnete",,46.089442,11.116527
+297,Brennero "Ex Scalo Filzi",,46.079982,11.122133
+298,Brennero "Ex Scalo Filzi",,46.079590,11.122150
+300,Brennero "Tridente",,46.086479,11.118447
+301,Brigata Acqui "Itc Tambosi",,46.065346,11.128400
+302,Calepina Roccabruna,,46.066833,11.122735
+303,Roncafort Bettine,,46.097530,11.102648
+304,Caneppele Goio,,46.094476,11.105228
+305,Caneppele Goio,,46.094431,11.105006
+306,Spalliera Cereria,,46.074170,11.128506
+307,Spalliera Cereria,,46.074158,11.128327
+308,Martignano Cesarini,,46.086271,11.129177
+309,Martignano Cesarini,,46.087137,11.129668
+310,Conci De Riccabona,,46.039645,11.140944
+311,Conci De Riccabona,,46.039406,11.140409
+312,Conci Ferrovia,,46.039365,11.137717
+313,Conci Ferrovia,,46.039883,11.137453
+314,Degasperi Anna Frank,,46.050201,11.124017
+315,Degasperi Anna Frank,,46.051099,11.123052
+316,Degasperi "Palazzo Stella",,46.043178,11.129229
+317,Degasperi "Palazzo Stella",,46.042977,11.129678
+318,Degasperi "Big Center",,46.045116,11.127949
+319,Degasperi "Big Center",,46.045242,11.128108
+320,Degasperi La Clarina,,46.048203,11.126520
+321,Degasperi La Clarina,,46.048680,11.126247
+322,Dei Mille "Villa Igea",,46.062490,11.127802
+323,Dei Mille "Villa Igea",,46.062506,11.127984
+324,Villazzano "Villa De Mersi",,46.048131,11.143328
+325,Martignano Costiole,,46.092274,11.132622
+326,Martignano Costiole,,46.092513,11.132436
+327,Martignano Castori,,46.083356,11.127848
+328,Martignano Castori,,46.083311,11.127683
+329,Dos Trento Mariano,,46.074597,11.113358
+330,Dos Trento Apuleio,,46.073022,11.114843
+331,"Ponte S.Giorgio",,46.076974,11.114129
+333,F.Lli Fontana Gen. Cantore,,46.076988,11.118892
+334,F.Lli Fontana Ferrovieri,,46.077461,11.116749
+335,Fermi La Clarina,,46.048733,11.128986
+338,Fogazzaro "Piscina",,46.056279,11.130465
+339,Fogazzaro "Piscina",,46.055966,11.129610
+340,Ss 349 Pozzata,,46.039534,11.144070
+341,Galilei Firmian,,46.068182,11.125504
+342,Gandhi "Parco Anna Frank",,46.051689,11.124402
+344,Gerola "Ospedale S.Chiara",,46.058389,11.133087
+345,Ghiaie Monte Baldo,,46.056275,11.116062
+346,Ghiaie "Giardinerie",,46.053228,11.116716
+347,Giovanelli "Osp. S.Camillo",,46.065485,11.131892
+348,Giusti Pascoli,,46.060364,11.118908
+349,Giusti "Arcivescovile",,46.061394,11.119040
+350,"Gocciadoro Arcate",,46.054910,11.133806
+351,Gocciadoro "Poliambulatori",,46.055618,11.132178
+352,Gorizia Adamello,,46.059882,11.131327
+353,Gramsci "Materna La Clarina",,46.053319,11.125589
+354,Gramsci Einaudi,,46.052678,11.128127
+355,Grazioli Brigata Acqui,,46.067096,11.128810
+356,Guardini Gilli,,46.091986,11.119080
+357,Guardini Gilli,,46.091235,11.119268
+358,Lunelli Centochiavi,,46.092703,11.119936
+360,Maccani "Rotatoria",,46.082766,11.114831
+361,Maccani Commercio,,46.091714,11.107510
+362,Maccani Commercio,,46.091591,11.107450
+363,Maccani Campotrentino,,46.085771,11.112487
+364,Maccani Campotrentino,,46.085490,11.112579
+365,Maccani Abondi,,46.080928,11.116577
+366,Maccani Abondi,,46.080800,11.116529
+368,Maccani "Macello",,46.089720,11.109149
+369,Maccani "Macello",,46.090562,11.108259
+370,Maccani "Rotatoria",,46.082853,11.114968
+371,Maccani "Ex Sloi",,46.087721,11.110915
+372,Maccani "Ex Sloi",,46.087847,11.110579
+373,Manci Galasso,,46.069881,11.122470
+374,Marconi Brennero,,46.084413,11.121323
+375,Marconi Solteri,,46.084543,11.121732
+376,Villazzano Marzola,,46.046672,11.148788
+377,Villazzano Marzola,,46.046549,11.149058
+378,Villazzano Giordano,,46.050678,11.148464
+379,Villazzano Giordano,,46.050736,11.148327
+380,Mattioli Vittorio Veneto,,46.058838,11.122521
+382,Menguzzato Al Casteller,,46.038222,11.134508
+383,Menguzzato "Centro Civico",,46.040449,11.131690
+384,Menguzzato "Centro Civico",,46.040107,11.132070
+385,Menguzzato Al Casteller,,46.038106,11.134135
+386,Milano A Prato,,46.060791,11.127602
+387,Milano A Prato,,46.060723,11.127671
+388,Missioni Africane,,46.078342,11.127457
+389,"Quattro Strade",,46.075587,11.128243
+390,"Quattro Strade",,46.076150,11.128131
+391,Missioni Africane,,46.078671,11.127111
+392,Monte Baldo Ghiaie,,46.057153,11.115163
+393,Muredei Prati,,46.056966,11.118125
+395,Muredei Benevoli,,46.053728,11.118206
+397,Oberziner Alpini,,46.078744,11.117589
+398,Orfane S.Maria Maggiore,,46.068847,11.119927
+400,Pasubio Adamello,,46.060030,11.133381
+401,F.Lli Perini 3 Novembre,,46.060903,11.124400
+402,Piave "Parco S.Chiara",,46.064151,11.127563
+403,Romagnosi Vannetti,,46.072993,11.122651
+404,Rosmini "Cimitero" / Muse,,46.064185,11.119431
+405,Rosmini "Cimitero",,46.063745,11.119596
+406,Rosmini S.Maria Maggiore,,46.067846,11.118867
+407,Rosmini S.Maria Maggiore,,46.068100,11.118642
+408,3 Nov. "Centro S.Chiara",,46.062231,11.123671
+409,3 Nov. "Centro S.Chiara",,46.062181,11.123931
+410,S.Francesco Porta Nuova,,46.067075,11.126226
+411,S.Pietro Degli Orbi,,46.069404,11.124511
+412,S.Pio X Matteotti,,46.056396,11.119944
+413,S.Pio X Largo Prati,,46.056862,11.119124
+414,S.Pio X Benevoli,,46.053951,11.120497
+415,S.Pio X Benevoli,,46.053806,11.120736
+416,Sanseverino S.Nicolò,,46.052351,11.112016
+417,Sanseverino S.Nicolò,,46.051036,11.111609
+420,Segantini Centa,,46.075601,11.122399
+421,Segantini Dogana,,46.074211,11.121460
+422,Solteri "Piazzina",,46.085489,11.122562
+423,Solteri "Piazzina",,46.085516,11.122391
+424,Solteri Largaiolli,,46.089937,11.120942
+425,Solteri Largaiolli,,46.090005,11.120776
+426,Solteri "Nido La Trottola",,46.087985,11.121274
+427,Solteri "Nido La Trottola",,46.087571,11.121354
+428,Gardolo "Campo Sportivo",,46.105677,11.107554
+429,Gardolo "Campo Sportivo",,46.105613,11.107590
+430,Gardolo "Cimitero",,46.106505,11.105512
+431,"Parco Del Dos Trent",,46.073381,11.107449
+432,"Parco Del Dos Trent",,46.073309,11.107377
+433,Brescia Divisioni Alpine,,46.071055,11.109691
+434,Brescia Divisioni Alpine,,46.070912,11.109660
+435,Vela S.Giorgio,,46.076202,11.105081
+436,Vela S.Giorgio,,46.076061,11.105187
+437,Dos Trento "Centro Sportivo",,46.075206,11.107949
+438,Dos Trento "Centro Sportivo",,46.075132,11.107771
+439,Sp 90 "Maso Prudenza",,46.028867,11.111521
+440,Sp 90 "Maso Prudenza",,46.029290,11.111771
+441,Maso Rossi Aichner,,46.105159,11.100565
+443,Torre Verde Galasso,,46.070658,11.122787
+444,Travai Al Nuoto / Muse,,46.064556,11.120926
+445,Trener "3 Torri Pat",,46.095248,11.116986
+446,Vittorio Veneto "S.Giuseppe",,46.057772,11.119307
+447,Vittorio Veneto Lorenzoni,,46.058577,11.123837
+448,Largo Prati,,46.057597,11.117583
+449,Largo Prati,,46.057417,11.117430
+450,Venezia Cave,,46.066609,11.131484
+451,Venezia Cave,,46.066491,11.132676
+452,Valsugana "Corallo",,46.068570,11.136388
+453,Valsugana "Corallo",,46.069162,11.136348
+454,Vicenza Montello,,46.061670,11.135931
+455,Vicenza Montello,,46.061778,11.135821
+456,Zambra "Ist. D'arte Vittoria",,46.092337,11.116358
+457,Verona Fogazzaro,,46.056510,11.128372
+458,Verona Fogazzaro,,46.056407,11.128667
+459,Verona "Palazzo Stella",,46.043574,11.131166
+460,Verona Menguzzato,,46.042589,11.131405
+461,Verona "Questura",,46.047815,11.130991
+462,Verona Einaudi,,46.052915,11.129683
+463,Verona Einaudi,,46.052746,11.129880
+464,Verona "Questura",,46.048048,11.131243
+466,3 Nov. "Ponte Cavalleggeri",,46.059292,11.126670
+467,Vigo Meano Rio Papa,,46.133302,11.132599
+468,Vigo Meano Rio Papa,,46.133567,11.132452
+469,Vigo Meano Piazza Stainer,,46.131626,11.134225
+470,Vigo Meano Piazza Stainer,,46.132010,11.134083
+471,Gazzadina Al Molar,,46.130605,11.130767
+472,Gazzadina Al Molar,,46.130546,11.130630
+473,Villazzano Villa Belfonte,,46.043515,11.149665
+474,Villazzano Villa Belfonte,,46.043654,11.149738
+475,Villazzano "Villa Tambosi",,46.043856,11.140566
+476,Villazzano "Villa Tambosi",,46.043867,11.140230
+477,Villamontagna P.Predaroi,,46.086139,11.160226
+478,Villamontagna "Michei",,46.084032,11.162655
+479,Villamontagna "Michei",,46.084634,11.163253
+481,Villazzano "Chiesa",,46.049549,11.144079
+484,Villazzano Piazza Nicolini,,46.048986,11.145976
+485,Villazzano Piazza Nicolini,,46.049116,11.146036
+486,Villazzano Banala,,46.047513,11.142278
+488,Conci "Villazzano 3",,46.041088,11.140552
+490,Zell Marnighe,,46.080366,11.138214
+491,Zell Marnighe,,46.079984,11.138881
+492,Spini "Officine",,46.118326,11.100624
+493,Spini "Officine",,46.118172,11.100941
+494,Spini "Zona Ind.Le Ftm",,46.118118,11.103691
+495,Spini "Zona Ind.Le Ftm",,46.118028,11.103638
+496,Spini "Stem Trento",,46.117796,11.094285
+497,Spini "Stem Trento",,46.117695,11.094346
+524,3 Nov. "Ponte Cavalleggeri",,46.059417,11.126263
+527,Meano "Centro Civico",,46.126522,11.116682
+1278,Corso Bettini Liceo,,45.896138,11.043343
+1279,Corso Bettini Liceo,,45.895066,11.043410
+1280,Corso Bettini "Mart",,45.893031,11.043616
+1281,Corso Bettini "Mart",,45.892816,11.043904
+1282,Corso Rosmini Via Savioli,,45.890963,11.037817
+1283,Corso Rosmini Monumento,,45.890870,11.042857
+1284,Corso Rosmini Posta,,45.890973,11.041257
+1285,Corso Rosmini Via Savioli,,45.890883,11.038010
+1286,Corso Verona Ospedale,,45.882487,11.040492
+1287,Lizzanella Corso Verona,,45.875566,11.034071
+1289,Corso Verona Ospedale,,45.881066,11.039620
+1290,Via Vicenza Via Cartiera,,45.887155,11.050411
+1291,Via Vicenza Via Cartiera,,45.887187,11.051160
+1292,Chiusole,,45.925520,11.052173
+1293,Chiusole,,45.925390,11.053592
+1294,Clinica Solatrix,,45.897990,11.045512
+1295,Costa Capolinea,,45.884218,11.072911
+1296,Sp.2 Loc. Beccache',,45.882087,11.071643
+1297,Marco Via Pinera,,45.847835,11.011731
+1298,Marco Centro,,45.844005,11.008643
+1299,Marco Chiesa,,45.841765,11.007816
+1300,Marco Via Alla Ghiffa,,45.840118,11.009468
+1301,Marco,,45.836852,11.011188
+1302,Marco Via Alla Ghiffa,,45.840222,11.009563
+1303,Marco Chiesa,,45.841469,11.008281
+1304,Marco Centro,,45.843767,11.008609
+1305,Marco Via Pinera,,45.847568,11.011566
+1307,Nogaredo Via Zuccate,,45.912139,11.025272
+1308,Nogaredo Via Zuccate,,45.912212,11.025262
+1309,Nomi "Casa di Riposo",,45.927892,11.076793
+1310,Nomi Piazza Springa,,45.928891,11.072085
+1311,Piazzale Orsi Stazione Fs,,45.890189,11.034270
+1312,"Stazione Fs",,45.890685,11.034009
+1313,Piazzale S.Giorgio,,45.895510,11.029591
+1314,Piazzale S.Giorgio,,45.895699,11.028855
+1315,Piazzale S.Maria Ospedale,,45.883438,11.040503
+1316,Piazzale S.Maria Ospedale,,45.883616,11.040937
+1318,Piazza Manifattura,,45.883923,11.021153
+1319,Piazza Manifattura,,45.883838,11.020771
+1320,Piazza Battisti,,45.890071,11.043906
+1322,Piazza Podestà,,45.886586,11.045629
+1323,Piazza S.Marco,,45.888708,11.045294
+1324,Piazzo,,45.922256,11.033881
+1325,Piazzo,,45.922219,11.033932
+1326,Pomarolo Chiesa,,45.926469,11.045297
+1327,Pomarolo Chiesa,,45.926386,11.045658
+1328,Pomarolo Via Degasperi,,45.926343,11.042440
+1329,Pomarolo Via Degasperi,,45.926217,11.042436
+1331,S.Ilario Sav,,45.908213,11.040563
+1332,S.Ilario Via Monti,,45.910990,11.040806
+1333,S.Ilario Sav,,45.908078,11.040657
+1334,Sp.2 Loc. Beccache',,45.882063,11.071733
+1335,Viale Dei Colli "Distributore",,45.887518,11.059253
+1337,Viale Dei Colli "Distributore",,45.887439,11.059541
+1338,Sp.2 Fr. Campolongo,,45.886995,11.063902
+1339,Sp.2 Noriglio,,45.884263,11.070323
+1340,Sp.2 Noriglio,,45.884371,11.069842
+1341,Sp.2 Fr. Campolongo,,45.886988,11.063994
+1342,Noriglio Via Dei Cimbri,,45.884696,11.069650
+1343,Lizzana Cristo,,45.866956,11.030832
+1344,Ss.12 Lavini,,45.855085,11.018587
+1347,Lizzana Cristo,,45.867259,11.030840
+1348,Lizzana Scuole Medie,,45.870236,11.031119
+1349,Lizzana Scuole Medie,,45.870623,11.031133
+1350,Lizzanella Ss.12,,45.875522,11.031822
+1351,Lizzanella Ss.12,,45.875686,11.032030
+1356,Via Baratieri,,45.896521,11.040654
+1357,Via Benacense Via Fiume,,45.882042,11.038360
+1358,Via Benacense Via Fiume,,45.881993,11.038495
+1359,Via Benacense Parco Ferrari,,45.878072,11.033318
+1360,Via Benacense Scuole Dante,,45.879617,11.035043
+1361,Via Benacense Scuole Dante,,45.879709,11.035212
+1362,Via Benacense Parco Ferrari,,45.877921,11.033242
+1363,Via Cavour Via Riva,,45.887219,11.034767
+1364,Via Cavour,,45.887151,11.038130
+1365,Via Cavour Via Riva,,45.887293,11.034164
+1366,Via Cavour,,45.887117,11.038372
+1367,Via Cesari Stazione Fs,,45.890279,11.035658
+1369,Via Dante Borgo S.Caterina,,45.889592,11.040460
+1370,Via Dante Mon. All'alpino,,45.885880,11.040399
+1371,Via Dante Mon. All'alpino,,45.886067,11.040305
+1372,Viale Dei Colli Sc. Alberghiera,,45.891067,11.047189
+1373,Viale Dei Colli Sc. Alberghiera,,45.891046,11.047336
+1374,Viale Dei Colli S.Biagio,,45.890313,11.050118
+1375,Viale Dei Colli S.Biagio,,45.890265,11.050139
+1376,Via Driopozzo Bivio Solatrix,,45.899638,11.044451
+1378,Via Lungo Leno Destro,,45.884855,11.038586
+1380,Via Giovannini,,45.907026,11.043154
+1383,Via Manzoni A.S.M.,,45.893369,11.036067
+1384,Via Manzoni A.S.M.,,45.893369,11.036193
+1385,Via Balista,,45.894967,11.032631
+1386,Via Balista,,45.894961,11.032738
+1388,Via Manzoni Via Paoli,,45.892237,11.039370
+1389,Via Paoli Piazza 25 Aprile,,45.893116,11.040065
+1391,Via Paoli,,45.891332,11.040106
+1392,Via Pasubio Via Unione,,45.887465,11.024942
+1393,Via Pasubio Viale Vittoria,,45.887211,11.030668
+1394,Via Pasubio Viale Vittoria,,45.887266,11.030142
+1395,Via Pasubio Via Unione,,45.887505,11.024737
+1397,Via A Prato,,45.893666,11.030581
+1398,Via Puccini Via Perosi,,45.903785,11.045042
+1399,Via Puccini Via Donizetti,,45.901372,11.046220
+1400,Via Pellico Brione,,45.904569,11.042576
+1401,Via Saibanti,,45.888163,11.036728
+1402,Via Saibanti,,45.888111,11.036707
+1404,Piazzale Orsi Ist. Veronesi,,45.891328,11.034569
+1405,Via Tiella,,45.907669,11.043757
+1408,Via Unione Scuole Degasperi,,45.885236,11.023282
+1409,Via Unione Scuole Degasperi,,45.885564,11.023170
+1410,Via Zeni "Centro Tecnofin",,45.890465,11.032705
+1411,Via Zeni "Centro Tecnofin",,45.891013,11.032714
+1412,Viale Trento Via Magazol,,45.899562,11.042141
+1413,Viale Trento Via Magazol,,45.899616,11.042207
+1414,Viale Trento Via Brione,,45.901770,11.041487
+1415,Viale Trento Via Brione,,45.901722,11.041666
+1416,Viale Trento Via Salvetti,,45.906610,11.040104
+1417,Viale Trento Via Salvetti,,45.906689,11.040210
+1418,Viale Vittoria Via Zotti,,45.885459,11.025871
+1419,Viale Vittoria Fucine,,45.886441,11.029403
+1420,Viale Vittoria Via Zotti,,45.885252,11.025383
+1421,Viale Vittoria Fucine,,45.886286,11.029023
+1422,Ss.12 "Rovercenter",,45.864490,11.029338
+1424,Villa Lagarina Via Alpini,,45.914559,11.034087
+1425,Villa Lagarina Via Alpini,,45.914750,11.033819
+1426,Villa Lagarina Via Solari,,45.917108,11.028806
+1427,Villa Lagarina Via Solari,,45.917136,11.028755
+1429,Villa Lagarina V. Zandonai,,45.912508,11.031747
+1431,Via Craffonara,,45.886658,11.034356
+1432,Via Monte Corno,,45.893135,11.037613
+1433,Via Parteli,,45.896472,11.036768
+1434,Via Pasqui,,45.899597,11.037398
+1437,Viale Caproni "Sony",,45.865476,11.010393
+1440,Viale Dell'industria,,45.871736,11.020685
+1442,Viale Del Lavoro "Aticarta",,45.866718,11.023454
+1443,Viale Del Lavoro "Rovercenter",,45.863613,11.027012
+1444,Via S.Maria,,45.884661,11.042935
+1445,Via Sighele Stazione Fs,,45.891265,11.035482
+1446,Via Zotti Via Cevedale,,45.885721,11.025832
+1447,Via Zotti,,45.886239,11.021005
+1504,Via Fornaci "Texbond",,45.860058,11.005383
+1685,Via Macello,,45.894308,11.032788
+2120,Zambra "Top Center",,46.091075,11.117774
+2189,Piazza Dante Dogana,,46.072592,11.119949
+2213,Bivio Per Senter,,45.881211,11.077472
+2214,Bivio Per Senter,,45.881441,11.077608
+2215,Brancolino,,45.902185,11.020153
+2216,Brancolino,,45.902219,11.020270
+2217,Brancolino Sp.90,,45.900719,11.020254
+2218,Brancolino Sp.90,,45.900853,11.020410
+2219,Casa Del Falegname,,45.885720,11.076344
+2220,Casa Del Falegname,,45.885630,11.076356
+2221,Casa Nel Bosco,,45.882386,11.076318
+2222,Casa Nel Bosco,,45.882347,11.076349
+2223,Castellano,,45.923356,11.007702
+2224,Cisterna,,45.883094,11.086350
+2225,Cisterna,,45.883158,11.086399
+2226,Cornale',,45.881541,11.010793
+2227,Cornale',,45.881500,11.010729
+2229,Folaso,,45.887066,11.001261
+2230,Folaso,,45.887214,11.001313
+2231,Isera Via Rosina,,45.887566,11.010587
+2232,Isera Via Rosina,,45.887771,11.010711
+2233,Isera Cimitero,,45.888588,11.011862
+2234,Isera Cimitero,,45.888491,11.011704
+2235,Isera Piazza San Vincenzo,,45.885334,11.009152
+2236,Isera Piazza San Vincenzo,,45.885224,11.009125
+2237,Lenzima,,45.878491,10.992327
+2238,Marano,,45.895859,11.015489
+2239,Marano,,45.895743,11.015472
+2240,Maso Mortal,,45.882809,11.079507
+2241,Maso Mortal,,45.882917,11.079470
+2242,Moietto,,45.894865,11.086017
+2243,Molina,,45.855439,10.986616
+2244,Molina,,45.855393,10.986692
+2245,Mori Bar Centrale,,45.851666,10.978853
+2246,Mori Piazza Cal di Ponte,,45.851720,10.977892
+2247,Mori Via Garibaldi,,45.853043,10.975311
+2248,Mori Piazzale Kennedy,,45.851716,10.979141
+2249,Mori Via Don Sturzo,,45.853419,10.970185
+2250,Mori Via Filzi,,45.854286,10.972109
+2253,Noarna,,45.911090,11.012496
+2254,Noarna,,45.910988,11.012480
+2255,Nogaredo Municipio,,45.912062,11.023051
+2256,Nogaredo Municipio,,45.911989,11.023088
+2257,Nogaredo Vignai,,45.910710,11.019922
+2258,Nogaredo Via Dei Colli,,45.911742,11.021481
+2259,Nogaredo Scuole Elementari,,45.909569,11.022535
+2260,Nogaredo Scuole Elementari,,45.909320,11.022346
+2261,Villa Lagarina Via Marconi,,45.915558,11.027715
+2262,Villa Lagarina Via Marconi,,45.915352,11.027845
+2265,Noriglio Cassa Rurale,,45.883717,11.069234
+2266,Noriglio Mon. Ai Caduti,,45.883665,11.070377
+2267,Patone,,45.902767,11.000423
+2268,Pedersano Capolinea,,45.922625,11.020454
+2271,Pedersano Centro,,45.918006,11.019786
+2272,Pedersano Centro,,45.917890,11.019717
+2273,Piazza Filzi Via Del Porto,,45.884058,11.017995
+2274,Ravazzone,,45.860012,10.991223
+2275,Mori Stazione Via Stazione,,45.861992,11.000505
+2276,Mori Stazione Via Stazione,,45.861835,11.000757
+2277,Reviano,,45.891169,11.007340
+2278,Reviano,,45.891587,11.007136
+2281,S.Ilario Iti,,45.910932,11.042030
+2282,S.Ilario Iti,,45.909897,11.041744
+2283,S.Ilario Via Stroperi,,45.913169,11.044680
+2284,S.Ilario Via Stroperi,,45.913089,11.044657
+2285,Sp.20 S.Sisinio,,45.924877,11.021092
+2286,Sp.20 Zisi,,45.931009,11.022102
+2287,Sp.20 Zisi,,45.931416,11.022116
+2288,Sp.20 S.Sisinio,,45.924981,11.021093
+2289,Ss.240 "Millennium Sud",,45.868678,11.014119
+2291,Ss.240 "Millennium Sud",,45.868802,11.014170
+2292,Ravazzone,,45.858843,10.990640
+2293,Ss.240 "Millennium Nord",,45.870320,11.016768
+2294,Ss.240 "Millennium Nord",,45.870588,11.017358
+2295,Saltaria,,45.895428,11.067237
+2296,Saltaria,,45.895205,11.067408
+2297,Sano,,45.846341,10.951531
+2298,Sasso,,45.904055,11.013671
+2299,Sasso,,45.904012,11.013554
+2300,Senter,,45.877509,11.089407
+2301,Tierno Scuola Materna,,45.845557,10.979812
+2302,Tierno Via Battisti,,45.847813,10.977934
+2303,Tierno Via Terra Nera,,45.847758,10.983715
+2304,Toldi,,45.897923,11.061752
+2307,Via D.Chiesa,,45.886200,11.019384
+2309,Via Della Libertà,,45.884868,11.017591
+2310,Via Driopozzo Bivio Solatrix,,45.898720,11.044443
+2311,Via Fedrigotti Chiesa,,45.884259,11.020421
+2312,Noriglio Via Fontani,,45.884341,11.068686
+2318,Via Lagarina,,45.910398,11.039909
+2321,Via Lagarina,,45.910879,11.039811
+2322,Via Puccini Via Donizetti,,45.901706,11.046261
+2323,Via Puccini Via Perosi,,45.904524,11.044655
+2325,Noriglio Via Valteri,,45.886140,11.065260
+2329,Via Vicenza Via Asiago,,45.885561,11.059525
+2330,Viale Caproni "Chizzola",,45.868365,11.022470
+2331,Viale Del Lavoro "Aticarta",,45.866295,11.023867
+2332,Viale Dell'industria,,45.871749,11.020845
+2333,Villa Lagarina Via Magrè,,45.917709,11.033243
+2334,Villa Lagarina Via Magrè,,45.917520,11.033502
+2335,Villa Lagarina Via Segantini,,45.916175,11.034150
+2336,Villa Lagarina Via Segantini,,45.916240,11.034113
+2337,Volano Ss.12,,45.917871,11.064024
+2338,Volano Ss.12,,45.917904,11.063866
+2339,Volano Via Roma,,45.917155,11.069927
+2340,Volano Des Tor,,45.917486,11.057512
+2341,Volano Via Europa,,45.916494,11.057177
+2342,Zaffoni,,45.891310,11.065552
+2343,Zaffoni,,45.891281,11.065714
+2349,S.Lucia Chiesa,,45.914954,11.025570
+2354,Via All'adige,,45.888337,11.019067
+2355,Pomarolo Via Rossaro,,45.925820,11.047490
+2356,Pomarolo Via Del Pionte,,45.925107,11.048121
+2359,Molini,,45.913939,11.021211
+2360,Lago di Cei Bellaria,,45.957515,11.032165
+2361,Lago di Cei,,45.951091,11.023207
+2362,Lago di Cei Albergo,,45.948219,11.015835
+2363,Sp.20 Maso Tiaf,,45.936511,11.008597
+2364,Sp.20 Bivio Per Bordala,,45.930910,11.007172
+2365,Castellano,,45.923278,11.007616
+2367,Sp.20 Bivio Per Bordala,,45.930864,11.007233
+2368,Sp.20 Maso Tiaf,,45.935890,11.008594
+2369,Lago di Cei Capitello,,45.947490,11.014818
+2370,Lago di Cei,,45.951042,11.023398
+2372,Molini,,45.914136,11.021270
+2374,Trieste Fiume,,46.063369,11.133421
+2375,Trieste "Busa",,46.064822,11.135627
+2376,Grazioli "Osp. S.Camillo",,46.065677,11.132418
+2377,Sp 76 Bivio S.Lazzaro,,46.129006,11.115500
+2380,Trener "3 Torri Pat",,46.095023,11.116759
+2383,Guardini "Centochiavi",,46.092561,11.118580
+2384,Zambra "Top Center",,46.091124,11.117966
+2385,Zambra "Ist. D'arte Vittoria",,46.092507,11.116291
+2386,Meano "Centro Civico",,46.127448,11.116520
+2389,Centochiavi Lunelli,,46.092618,11.120549
+2394,Piazza Guella,,45.867441,11.031932
+2395,Largo S.Floriano,,45.866422,11.032697
+2397,Via Brigata Mantova,,45.866722,11.034907
+2398,Via Della Cisterna,,45.869441,11.033808
+2404,Romagnano 7 Fontane,,46.014314,11.104351
+2405,Travai Piazza Fiera,,46.064770,11.122471
+2406,Ghiaie "Giardinerie",,46.052906,11.117029
+2407,Ghiaie Monte Baldo,,46.056336,11.116202
+2408,"Parcheggio Zuffo",,46.075042,11.109713
+2409,Cavalcavia S.Lorenzo,,46.070352,11.119107
+2410,"Parcheggio Monte Baldo",,46.057088,11.113414
+2412,Piazzale A22,,46.077383,11.111236
+2418,Ss 12 "Pioppeto",,46.108623,11.108717
+2419,Ss 12 S.Anna,,46.112409,11.107438
+2421,Via A Prato,,45.893565,11.030778
+2422,Roncafort,,46.100730,11.101790
+2423,Maso Rossi Aichner,,46.105166,11.100786
+2424,S.Lorenzo "Funivia",,46.070045,11.116683
+2425,Conci "Villazzano 3",,46.041328,11.140680
+2426,S.Lorenzo "Funivia",,46.070304,11.117242
+2430,Sanseverino Monte Baldo,,46.057694,11.112580
+2431,Sanseverino "Albere"/Muse,,46.063334,11.113227
+2432,Sanseverino Verdi,,46.065846,11.114266
+2435,Brescia "Ca Dei Gai",,46.073516,11.105355
+2437,Ravina Della Croce,,46.040974,11.110975
+2438,Ss 12 Talvera,,46.103288,11.110545
+2446,Ghiaie "Zona Ind.Le Ftm",,46.119113,11.105302
+2447,Ghiaie Salisburgo,,46.122767,11.103337
+2448,Ghiaie "Sc. Materna",,46.124931,11.099736
+2449,Spini Praga,,46.123666,11.097351
+2453,Palazzine Maso S.Antonio,Loc. Palazzine 117,46.115041,11.101844
+2454,Crosare Officina,Via Crosare 64,46.110069,11.105486
+2455,Crosare Parcheggio,,46.107991,11.105394
+2457,Gardolo Castel di Gardolo,,46.113907,11.110614
+2458,Gardolo Castel di Gardolo,,46.113885,11.111224
+2470,Jedin Sanseverino,,46.051139,11.114415
+2472,Lamar "Via Rossa",,46.121491,11.106413
+2474,Via Vallunga Bivio M. Pipel,,45.895243,11.052060
+2475,Maso Valduga,,45.899926,11.054673
+2476,Bosco Della Citta',,45.901613,11.055394
+2477,Maso Valduga,,45.899767,11.054287
+2478,Via Vallunga Bivio M. Pipel,,45.895243,11.051973
+2481,Viale Dei Colli Via Vallunga,,45.891091,11.049783
+2482,Viale Dei Colli Via Vallunga,,45.891342,11.049818
+2483,Sopramonte "Campra",,46.078491,11.058290
+2484,Sopramonte "Campra",,46.078730,11.058131
+2485,Brescia "Ca Dei Gai",,46.073335,11.105639
+2488,Pranzelores "Top Center",,46.089853,11.118524
+2489,Pranzelores "Tridente",,46.086557,11.120064
+2490,Povo Pantè,,46.064013,11.150940
+2491,Roncafort Caproni,,46.100115,11.099708
+2492,Roncafort Bettine,,46.097544,11.102220
+2494,Corso Verona Via Cainelli,,45.877270,11.035963
+2497,"Ponte di Ravina",,46.045489,11.113301
+2498,"Ponte di Ravina",,46.045520,11.113603
+2499,Villazzano "Chiesa",,46.049487,11.143843
+2500,Ss 45 "Scala",,46.077367,11.099792
+2501,Sopramonte "M.Petoci",,46.066953,11.059509
+2502,Vigo Meano Don Perugini,,46.132987,11.133921
+2504,Mori Via Del Garda,,45.851519,10.972511
+2505,Cognola "Chiesa",,46.076326,11.141355
+2506,Muralta Valsugana,,46.076656,11.130377
+2508,Toldi,,45.897970,11.061612
+2509,Costa,,45.884401,11.072918
+2510,Sp.2 Bivio Per Cisterna,,45.881281,11.075365
+2511,Isera Piazza S.Vincenzo,,45.885459,11.009157
+2512,Ss.12 Lavini Biotopo,,45.853961,11.015507
+2513,Ss.12 Lavini Biotopo,,45.853465,11.014536
+2514,Ss.240 Ponte Sull'adige,,45.863191,10.997289
+2515,Ss.240 Ponte Sull'adige,,45.863235,10.997355
+2520,Verdi Inama,,46.066496,11.117759
+2521,Gazzadina Le Case Nòve,,46.134118,11.128307
+2522,Gazzadina Del Porfido,,46.130582,11.126162
+2524,Cimirlo,,46.067613,11.184700
+2525,"Eremo",,46.068317,11.178756
+2526,Celva,,46.070701,11.176484
+2527,Via Eremo,,46.067996,11.175565
+2528,"Maso di Brenz",,46.065719,11.172233
+2529,Borino Civ.69,,46.066125,11.168745
+2530,Borino,,46.067180,11.165118
+2532,Borino Civ.69,,46.066010,11.168863
+2533,"Maso di Brenz",,46.065674,11.172380
+2534,Via Eremo,,46.067908,11.175717
+2535,"Eremo",,46.068202,11.178588
+2537,Verona "Big Center",,46.045763,11.130821
+2538,Verona "Big Center",,46.045691,11.131061
+2540,Viale Caproni "Luxottica",,45.864859,11.017764
+2542,Via di Vittorio,,45.863141,11.020959
+2543,Villa Lagarina V. Zandonai,,45.912479,11.031904
+2544,Via Rebora Posta,Via Rebora,45.891517,11.041681
+2549,Povo "Polo Sociale",,46.065613,11.158009
+2660,Patone Gera,,45.897940,11.002067
+2662,Patone Gera,,45.897942,11.002101
+2663,Gardolo 4 Nov. 2 Giugno,,46.101253,11.112956
+2664,Spini Loghét,,46.120499,11.091086
+2665,Spini Loghét,,46.120567,11.091220
+2667,Fersina "Trentino Servizi",,46.044826,11.122297
+2668,Fersina "Zona Artigianale",,46.038207,11.124589
+2669,Fersina "Zona Sportiva",,46.041683,11.123711
+2670,Piazza Cappuccini,,46.073078,11.128449
+2671,Avancini Laste,,46.071422,11.130842
+2672,Collina "Ospedalino",,46.069880,11.131249
+2673,Giardini Collina,,46.068141,11.129681
+2674,Via Vannetti "Casa di Riposo",,45.889813,11.037087
+2675,Via Bomporti "Stadio Quercia",,45.901390,11.038899
+2676,Via Cittadella Via Mozart,,45.901288,11.040122
+2680,Gazzoletti Piazza Dante,,46.071816,11.121974
+2682,Povo Sommarive,,46.065586,11.150448
+2683,Povo "Irst",,46.067312,11.150548
+2686,Isera Piazza S.Vincenzo,,45.885396,11.009290
+2688,Villazzano "Stazione Fs",,46.044757,11.139690
+2689,Villazzano "Stazione Fs",,46.044754,11.139437
+2695,Asiago "Enaip",,46.045458,11.138553
+2696,Asiago "Enaip",,46.045465,11.138353
+2697,Via Cittadella Via Bomporti,,45.902739,11.038737
+2699,Ss.12 "Rovercenter",,45.864206,11.029050
+2701,Ss 349 Pozzata,,46.041779,11.142383
+2706,Via Pedroni,,45.892216,11.033020
+2707,Via Unione "Residenza Eos",,45.893524,11.027404
+2710,Via Unione Scuole Filzi,,45.888721,11.024219
+2713,Dos Trento Mariano,,46.073694,11.114481
+2715,Gardolo P.Le Neufahrn Park,,46.106159,11.110842
+2734,Via Lungo Leno Sinistro,,45.884493,11.039114
+2746,Lenzima Via Della Vittoria,Via Della Vittoria 13,45.877392,10.991755
+2747,Lenzima Via Della Vittoria,Via Della Vittoria Fronte Civ. 11,45.877342,10.991623
+2757,Noriglio Mon. Ai Caduti,,45.884029,11.070128
+2758,Viale Vittoria Scuole Degasperi,,45.884931,11.023892
+2759,Via Delle Laste,,46.072466,11.129920
+2760,Savignano,,45.938008,11.056056
+2761,S.Lucia Chiesa,,45.914889,11.025888
+2763,Gard.D.Mezzo Dos D.La Luna,Via Dos De La Luna 54,46.115344,11.117269
+2764,Gard.D.Mezzo Maso Garbini,Via Dos De La Luna 2,46.114494,11.116634
+2767,Vigo Meano "S.Pietro",,46.128251,11.134574
+2768,Via Unione Scuole Filzi,,45.888575,11.024197
+2770,Via Comel,,45.904014,11.042310
+2775,Via Zigherane,,45.879247,11.023765
+2780,Ss 45 S.Giorgio,,46.078668,11.099302
+2781,Rovereto Autostazione,,45.891201,11.040400
+2782,Spini "Pal. Giano",,46.121548,11.095251
+2783,Spini "Pal. Giano",,46.121743,11.094961
+2784,Spini Varsavia,,46.125601,11.098331
+2785,Spini Varsavia,,46.125804,11.098199
+2786,Spini Masadori,,46.119922,11.096500
+2787,Spini Masadori,,46.120114,11.096203
+2788,Spini Bregenz,,46.117160,11.092520
+2789,Spini Bregenz,,46.117016,11.092579
+2790,Spini "Casa Circondariale',,46.127009,11.096719
+2791,Interporto "Interbrennero",,46.111101,11.090984
+2792,Interporto "Interbrennero",,46.110805,11.090865
+2793,Roncafort Innsbruck,Via Innsbruck 65,46.101701,11.094567
+2794,Roncafort Innsbruck,Via Innsbruck 65,46.102220,11.094390
+2795,Interporto "Logistica 2",,46.106413,11.092253
+2796,Interporto "Logistica 2",,46.105950,11.092154
+2797,Interporto "Fercam",,46.108238,11.091600
+2798,Interporto "Fercam",,46.108308,11.091777
+2799,Spini Praga,,46.123624,11.097440
+2800,Pedersano,,45.922564,11.020236
+2801,Vela "Scuole S.Vigilio",,46.081292,11.102659
+2802,Villa Lagarina "Bocciodromo",,45.920748,11.032004
+2803,Villa Lagarina "Bocciodromo",,45.920286,11.031888
+2804,Villa Lagarina "Al Ponte",,45.913238,11.037377
+2805,Villa Lagarina "Al Ponte",,45.913174,11.037349
+2806,Ss.240 "Alla Staffa",,45.872760,11.024323
+2811,Fermi Volta,,46.046974,11.126860
+2812,Castellano Don Zanolli,,45.926062,11.005714
+2814,Mattarello Gotarda,,46.009941,11.128458
+2815,Mattarello Fratte,,46.005440,11.126382
+2816,Via Zandonai,,45.886680,11.020121
+2817,Roncafort Nord,,46.103456,11.100248
+2819,Spini Pont Dei Vodi,,46.122659,11.092019
+2820,Povo Pantè,,46.063947,11.150560
+2821,Povo Alla Cascata,,46.068355,11.150480
+2822,Mori Via Filzi,,45.854392,10.972143
+2823,Mori Via Don Sturzo,,45.853340,10.970030
+2824,Mori Via Terra Nera,,45.850031,10.981009
+2825,Via All'adige,,45.888336,11.018627
+2826,Mori Via Del Garda,,45.851921,10.972036
+2827,Via Monte Pipel,,45.895096,11.057074
+2828,Interporto "Sait",,46.113189,11.090141
+2829,Interporto "Sait",,46.113223,11.090363
+2831,Via Balista Ist. Veronesi,,45.896064,11.030964
+2832,Viale Vittoria Scuole Degasperi,,45.884804,11.023960
+2833,Povo Alla Cascata,,46.067348,11.150372
+2835,Calliano Via Marcolini,,45.931773,11.092114
+2836,Calliano Via Marcolini,,45.931764,11.092775
+2837,Volano Via Delle Ancone,,45.917819,11.076406
+2838,Ss.12 Fornaci,,45.919443,11.085327
+2839,Volano Via Roma,,45.917298,11.070050
+2840,Nomi Cantina Sociale,,45.928339,11.074610
+2841,Nogaredo Via Verdi,,45.911618,11.024560
+2842,Nogaredo Via Verdi,,45.911690,11.024396
+2843,Sp.20 Bivio Noarna,,45.915825,11.016559
+2844,Sp.20 Bivio Noarna,,45.915880,11.016803
+2845,Via 13 Settembre,,45.908302,11.041664
+2847,Ponte Delle Zigherane,,45.880539,11.022248
+2848,Campana Dei Caduti,,45.874381,11.040911
+2849,Marco Parco Ex De Bellat,,45.843722,11.007151
+2850,Marco Parco Ex De Bellat,,45.843535,11.007471
+2851,Marco Via S.Romedio,,45.845955,11.004526
+2852,Marco Via S.Romedio,,45.847437,11.003378
+2853,Mori Stazione,,45.860603,11.001714
+2854,Mori Stazione,,45.860969,11.001673
+2855,Via Salvetti,,45.905949,11.042877
+2856,Ss.12 Castel Pietra,,45.921721,11.091309
+2857,Ss.12 Castel Pietra,,45.922938,11.092225
+2858,Ss.12 Campagnole,,45.928854,11.093011
+2859,Ss.12 Campagnole,,45.928851,11.093153
+2860,Nomi Piazza Springa,,45.928794,11.071877
+2861,Porte di Trambileno,,45.883348,11.051600
+2862,Porte di Trambileno,,45.883530,11.052029
+2863,Viale Schio,,45.883599,11.043713
+2864,Viale Schio,,45.883690,11.043651
+2865,Viale Zugna 13,,45.884470,11.047001
+2866,Viale Zugna 13,,45.884452,11.047161
+2867,Viale Zugna 48,,45.884382,11.049309
+2868,Viale Zugna 48,,45.884347,11.049429
+2869,Via Magazol Viale Trento,,45.899299,11.041955
+2870,Ss.240 "Alla Staffa",,45.872820,11.024167
+2872,"Rsa S.Bartolomeo",,46.048672,11.134149
+2873,Casette,,45.880722,11.017851
+2874,Via Fornaci "Texbond",,45.859392,11.005003
+2875,Via Fornaci "Dana",,45.854746,11.004438
+2876,Via Fornaci "Dana",,45.854456,11.004106
+2877,Ss.240 "Meb",,45.867858,11.011826
+2878,Ossario Castel Dante,,45.872406,11.035284
+2879,Via Castel Dante,,45.875629,11.037818
+2880,Madonna Del Monte,,45.879205,11.040859
+2881,Madonna Del Monte,,45.879213,11.040681
+2882,Largo Tacchi,,45.883914,11.044826
+2883,Largo Tacchi,,45.883271,11.044239
+2884,Via Bellini,,45.899265,11.044679
+2886,Via Vicenza Via Asiago,,45.885484,11.059421
+2887,Genovesa,,45.882907,11.062550
+2888,Genovesa,,45.882458,11.062553
+2889,Noriglio Via Jacob,,45.883853,11.067449
+2890,Noriglio Via Jacob,,45.883773,11.067597
+2891,Noriglio Parco Alle Pozze,,45.884317,11.065743
+2892,Nogaredo Vignai,,45.910279,11.019418
+2893,Calepina Liceo,,46.067092,11.124949
+2895,Cisterna Capolinea,,45.883114,11.087310
+2897,Sp.23 "Nero Cubo",,45.855421,11.002179
+2898,Viale Schio S.Maria,,45.884693,11.043501
+2899,Via Unione "Residenza Eos",,45.893502,11.027541
+2900,Monte Ghello,,45.887462,11.066109
+2901,Monte Ghello,,45.887015,11.066337
+2902,Viale Caproni "Chizzola",,45.868310,11.021991
+2903,Villa Lagarina Via D.Chiesa,,45.913910,11.032613
+2904,Villa Lagarina "Poste",,45.914403,11.033162
+2905,Castellano Don Zanolli,,45.926140,11.005759
+2906,Calliano Ss.12,,45.934315,11.096017
+2907,Calliano Ss.12,,45.934334,11.095870
+2908,Calliano Cimitero,,45.936981,11.098860
+2909,Besenello,,45.941818,11.109937
+2910,Besenello Nord,,45.945821,11.106088
+2911,Besenello Sud,,45.936872,11.110211
+2914,Noriglio Parco Alle Pozze,,45.884247,11.065179
+2915,Via Dell'artigianato,,45.864405,11.017806
+2918,Gabbiolo "Campo Sportivo",,46.055511,11.149102
+2919,Volano Via Spiazzi,,45.915721,11.051424
+2922,Viale Dei Colli Bertolda,,45.888345,11.051602
+2923,Cadine Della Fornas,,46.087159,11.069039
+2924,Cadine Della Fornas,,46.086923,11.069368
+2925,Spini Linz,,46.116627,11.099962
+2926,Borgo S.Caterina,,45.889827,11.039443
+2927,Venezia "Port'aquila",,46.069525,11.127855
+2928,Porte Chiesa,,45.883422,11.053319
+2929,Porte Via Al Brentegam,,45.881067,11.053138
+2930,Porte Via Miravalle,,45.879937,11.047141
+2931,Dosso,,45.881357,11.054807
+2932,Porte Chiesa,,45.883185,11.053713
+2933,Porte Via Al Brentegam,,45.880931,11.052683
+2934,Porte Via Miravalle,,45.879916,11.046859
+2935,Dosso,,45.881524,11.054598
+2936,Sp.89 Maso Brentegam,,45.880439,11.050882
+2937,Via Fornaci Via Pineta,,45.864979,11.006182
+2938,Via Fornaci Via Pineta,,45.864770,11.005451
+2939,Funivia-Staz. di Valle-Trento,,46.069625,11.115641
+2940,Funivia-Staz. di Monte-Sardagna,,46.065992,11.102655
