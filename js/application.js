@@ -1,4 +1,4 @@
-define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI', 'models/stop'], function(Chaplin, gtfs, ui, Stop) {
+define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gtfs, ui) {
  // 'use strict';
 
   function showBlockUi(){
@@ -29,18 +29,10 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI', 'models/stop'], funct
       var args = [].slice.call(arguments)
           self = this;
       gtfs.load(function(){
-          Chaplin.Application.prototype.start.apply(self, args);
-          /* stop = new Stop({
-            stop_id:1
-          });
-          stop.on('change:times', function(model, values){
-            console.log(values);
-          });*/
+          Chaplin.Application.prototype.start.apply(self, args)
       });
     }
   });
-
-  window.Chaplin = Chaplin;
 
   return Application;
 });

@@ -61,7 +61,7 @@ define([
         self.$('.arrivals a').each(function(index, item){
           var target = $(item), offset,
               value  = target.data('value');
-          if ( isAboutNow(value) ){
+          if ( isAboutNow(value) ){ // TOFIX
             offset = target.position().top;
             self.$('.arrivals').scrollTop(offset - 100); 
           }
@@ -77,9 +77,16 @@ define([
           position: 'left'
       });
       this.map.addControl( this.sidebar );
+
+      this.sidebar.on('hidden', function () {
+        Chaplin.mediator.publish('unselect:all');
+      });
     },
 
     open: function(stop){
+
+      Chaplin.mediator.publish('unselect:all');
+
       this.model.set( stop.toJSON() );
  
       this.model.relations.times.fetch({
@@ -89,6 +96,7 @@ define([
     },
 
     close: function(){
+      Chaplin.mediator.publish('unselect:all');
       this.sidebar.close();
     },
 
