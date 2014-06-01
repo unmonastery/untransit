@@ -5,6 +5,6 @@ define(function() {
   // `match` is match method of the Router
   return function(match) {
     match('', 'map#show');
-    match('stops/:id', 'map#showStops');
+    match(':id', 'map#showStops');
   };
 });

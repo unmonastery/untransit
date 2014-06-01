@@ -18,6 +18,7 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
         $.unblockUI();
     };
 
+  window.Chaplin = Chaplin;
 
   // The application object
   // Choose a meaningful name for your application

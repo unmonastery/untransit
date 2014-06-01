@@ -53,7 +53,7 @@ define([
       sidebar: '#sidebar-region'
     },
 
-    initialize: function(){
+    initialize: function(options){
       this.collections = {
         stops: new Collection([], {
           model:Stop
@@ -62,6 +62,8 @@ define([
           model:Shape
         })
       };
+
+      this.defaultStopId = options.stopId;
 
       this.markers = {};
       this.polylines = {};
@@ -135,6 +137,24 @@ define([
        
       });
       map.fitBounds(bounds);
+
+      if (this.defaultStopId ){
+        var stops = this.collections.stops.where({'stop_id':this.defaultStopId});
+        if (stops.length == 0){
+          return alert('Fermata non trovata.');
+        }
+        if (stops.length > 1){
+          return alert('Troppe fermate con questo id.');
+        }
+        var stop = stops[0];
+        var lat = stop.get('stop_lat'), 
+            lng = stop.get('stop_lon'),
+            latlng = L.latLng(lat, lng);
+        sidebar.select(stop);
+        map.panTo(latlng);
+        placeHolder.setLatLng(latlng);
+        placeHolder.addTo(map);
+      }
     },
 
     showRoutes: function(){

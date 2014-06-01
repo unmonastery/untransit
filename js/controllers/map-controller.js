@@ -12,7 +12,8 @@ define([
     },
     showStops: function(params){
       this.view = new MapView({
-              region: 'main'
+              region: 'main',
+              stopId:params.id
             });
     }
   });
