@@ -68,7 +68,7 @@ define([
       this.markers = {};
       this.polylines = {};
       
-      this.listenTo( this.collections.stops, 'reset', this.update);
+      this.listenTo( this.collections.stops, 'reset', this.showStops);
       this.listenTo( this.collections.shapes, 'reset', this.showRoutes);
       Chaplin.mediator.subscribe('select:route', _.bind(this.highlightRoute, this) );
       Chaplin.mediator.subscribe('unselect:all', _.bind(this.lowlightAllRoutes, this) );
@@ -111,7 +111,7 @@ define([
     
     },
 
-    update: function(){
+    showStops: function(){
       var map = this.map, markers = this.markers, placeHolder = this.placeHolder,
           sidebar = this.sidebar,
           bounds = L.latLngBounds([]);
@@ -123,7 +123,12 @@ define([
         if (!markers[ stop.get('stop_id') ]){
            marker = L.marker(latlng, {
             icon:createIcon(currentZoom)
-          }).on('click', function(e){
+          })
+           .on('contextmenu', function(e){ /* long click */
+            // TODO do something
+            e.preventDefault();
+           })
+           .on('click', function(e){
             sidebar.select(stop);
             map.panTo(latlng);
             placeHolder.setLatLng(latlng);
@@ -202,10 +207,6 @@ define([
       for (key in this.polylines){
         this.lowlightRoute( key );
       }
-    },
-
-    onTogglePanel: function(){
-      alert('hey!');
     }
 
   });

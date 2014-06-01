@@ -12,7 +12,7 @@ define([
     var query = {}, collection,
         fieldName = from.name + '_id',
         stopId = from.get( fieldName );
-    query[ fieldName ] = stopId;
+    query[ fieldName ] = stopId; 
     collection = new Collection([], { query:query, model:to, reset:true } );
     from.listenTo( this, 'change:' + fieldName, function(){
       collection.query[fieldName] = from.get(fieldName);
