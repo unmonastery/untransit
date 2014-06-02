@@ -7,8 +7,8 @@ define([
 
   // load GTFS data and store them on localstorage
 
-  var  files = [ 'agency', 'calendar', 'calendar_dates', 
-                 'routes', 'stop_times', 'stops', 'trips', 'shapes' ],
+  var  files = [ /* 'agency', 'calendar', 'calendar_dates', 
+                 'routes', 'stop_times',*/ 'stops', /*'trips',*/ 'shapes' ],
        dataset = options.dataset,
        GTFSModel = {
                 singleton: null,

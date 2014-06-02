@@ -172,6 +172,7 @@ define([
         if (!this.polylines[key])
           this.polylines[key] = polyline;
       }
+      this.map.panTo( L.latLng(40.6398408,16.6257145));
     },
 
     highlightRoute: function(shapeId){
