@@ -1,7 +1,7 @@
 define([
   'underscore',
   'chaplin',
-  'models/base/Collection',
+  'models/base/collection',
   'models/gtfs'
 ], function(_, Chaplin, Collection, gtfs) {
   'use strict';
