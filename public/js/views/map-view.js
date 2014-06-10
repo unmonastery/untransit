@@ -31,7 +31,7 @@ define([
               iconAnchor: [5, 5]
             });
     }
-    
+
   };
 
   function calculateSize(zoom){
@@ -54,29 +54,24 @@ define([
     },
 
     initialize: function(options){
-      this.collections = {
-        stops: new Collection([], {
-          model:Stop
-        }),
-        shapes: new Collection([], {
-          model:Shape
-        })
-      };
+      _.extend( this, options );
 
-      this.defaultStopId = options.stopId;
-
+      // keep track of markers and polylines
       this.markers = {};
       this.polylines = {};
-      
+
       this.listenTo( this.collections.stops, 'reset', this.showStops);
       this.listenTo( this.collections.shapes, 'reset', this.showRoutes);
-      Chaplin.mediator.subscribe('select:route', _.bind(this.highlightRoute, this) );
-      Chaplin.mediator.subscribe('unselect:all', _.bind(this.lowlightAllRoutes, this) );
+      this.listenTo( this.models.stop, 'change:stop_id', this.selectStop );
+      this.listenTo( this.models.shape, 'change:shape_id', this.selectShape );
+
     },
 
     postRender: function(){
 
-      this.map = L.map('map');
+      var map, placeHolder, markers = this.markers;
+
+      map = this.map = L.map('map');
       this.map.setView([0, 0], 2);
       L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 18,
@@ -84,40 +79,39 @@ define([
           attribution: 'Map data &copy; OpenStreetMap contributors'
       }).addTo(this.map);
 
-      this.sidebar = new SidebarView({
-        map: this.map
-      });
-
-      this.placeHolder = L.circle([0,0], 
+      placeHolder = this.placeHolder = L.circle([0,0],
         calculateSize( this.map.getZoom() ),{
           color: 'red',
           fillColor: '#f03',
           fillOpacity: 0.5
       });
-      // this.placeHolder.addTo(this.map);
 
-      this.collections.stops.fetch({reset:true});
-      this.collections.shapes.fetch({reset:true});
-
-      var map = this.map, markers = this.markers, marker, placeHolder = this.placeHolder;
+      // change icon size on zoom
       map.on('zoomend', function() {
-        var currentZoom = map.getZoom(), key;
+        var currentZoom = map.getZoom(), key, marker;
         for (key in markers ){
           marker = markers[key];
           marker.setIcon( createIcon(currentZoom) );
         }
         placeHolder.setRadius( calculateSize(currentZoom) );
       });
-    
+
+      this.sidebar = new SidebarView({
+          models: this.models,
+          // region:'sidebar',
+          map: map
+      });
+
     },
 
     showStops: function(){
-      var map = this.map, markers = this.markers, placeHolder = this.placeHolder,
-          sidebar = this.sidebar,
+      var map = this.map,
+          markers = this.markers,
           bounds = L.latLngBounds([]);
+
       this.collections.stops.forEach(function(stop){
         var marker, currentZoom = map.getZoom(),
-            lat = stop.get('stop_lat'), 
+            lat = stop.get('stop_lat'),
             lng = stop.get('stop_lon'),
             latlng = L.latLng(lat, lng);
         if (!markers[ stop.get('stop_id') ]){
@@ -126,40 +120,19 @@ define([
           })
            .on('contextmenu', function(e){ /* long click */
             // TODO do something
-            e.preventDefault();
+            // e.preventDefault();
            })
            .on('click', function(e){
-            sidebar.select(stop);
-            map.panTo(latlng);
-            placeHolder.setLatLng(latlng);
-            placeHolder.addTo(map);
-          })
-          .addTo(map);
+              Chaplin.mediator.publish('select:stop', stop.get('stop_id'));
+              // e.preventDefault();
+          }).addTo(map);
           markers[ stop.get('stop_id') ] = marker;
         }
-       
+
         bounds.extend(latlng);
-       
+
       });
       map.fitBounds(bounds);
-
-      if (this.defaultStopId ){
-        var stops = this.collections.stops.where({'stop_id':this.defaultStopId});
-        if (stops.length == 0){
-          return alert('Fermata non trovata.');
-        }
-        if (stops.length > 1){
-          return alert('Troppe fermate con questo id.');
-        }
-        var stop = stops[0];
-        var lat = stop.get('stop_lat'), 
-            lng = stop.get('stop_lon'),
-            latlng = L.latLng(lat, lng);
-        sidebar.select(stop);
-        map.panTo(latlng);
-        placeHolder.setLatLng(latlng);
-        placeHolder.addTo(map);
-      }
     },
 
     showRoutes: function(){
@@ -179,11 +152,33 @@ define([
       }
     },
 
+    selectStop: function(stop){
+      var marker, key;
+      for (key in this.markers){
+        marker = this.markers[key];
+        if ( key == stop.get('stop_id') ){
+          this.map.panTo( marker.getLatLng() );
+          this.placeHolder.setLatLng( marker.getLatLng() );
+          this.placeHolder.addTo( this.map );
+        }
+      }
+    },
+
+    selectShape: function(shape){
+      var shapeId = shape.get('shape_id');
+      if ( shapeId ){
+        this.highlightRoute( shapeId );
+      } else {
+        this.lowlightAllRoutes();
+      }
+
+    },
+
     highlightRoute: function(shapeId){
       var polyline;
 
       this.lowlightAllRoutes();
-      
+
       polyline = this.polylines[ shapeId ];
       polyline.setStyle({
         color:'red',

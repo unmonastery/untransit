@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Chaplin Boilerplate Application</title>
-  
+
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="/css/L.Control.Sidebar.css" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/maki-sprite.css" />
@@ -33,6 +33,7 @@
       text: '../bower_components/requirejs-text/text',
       chaplin: '../bower_components/chaplin/chaplin',
       sidebar: '../lib/L.Control.Sidebar',
+      easybtn:'../../lib/easy-button',
       csv: '../bower_components/comma-separated-values/csv',
       moment: '../bower_components/moment/moment'
     },
@@ -48,6 +49,9 @@
       },
       handlebars: {
         exports: 'Handlebars'
+      },
+      easybtn: {
+        deps: ['leaflet']
       },
       sidebar: {
         deps: ['leaflet']

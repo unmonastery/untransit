@@ -7,7 +7,7 @@ define([
   'models/stop',
   'text!templates/sidebar.hbs',
   'text!templates/stop-time.hbs',
-  '../../lib/easy-button'
+  'easybtn'
 ], function($, moment, Chaplin, sidebar, View, Stop, template, timeTmpl) {
   'use strict';
 
@@ -49,9 +49,12 @@ define([
     },
 
     initialize: function(options){
+      _.extend(this, options);
+      this.model = this.models.stop;
+
+      this.listenTo( this.model, 'change:stop_id', this.selectStop);
+
       var self = this;
-      this.map = options.map;
-      this.model = new Stop();
       this.model.relations.times.comparator = function(time){
         return time.get('arrival_time');
       };
@@ -64,10 +67,10 @@ define([
               value  = target.data('value');
           if ( isAboutNow(value) ){ // TOFIX
             offset = target.position().top;
-            self.$('.arrivals').scrollTop(offset - 100); 
+            self.$('.arrivals').scrollTop(offset - 100);
           }
         });
-      
+
       });
     },
 
@@ -80,7 +83,7 @@ define([
       this.map.addControl( this.sidebar );
 
       L.easyButton(
-          'fa-info', 
+          'fa-info',
            function (){
               self.open();
            },
@@ -88,27 +91,21 @@ define([
           this.map
       ).setPosition('topright');
 
-
-      this.sidebar.on('hidden', function () {
-        // Chaplin.mediator.publish('unselect:all');
-      });
     },
 
     open: function(stop){
       this.sidebar.show();
     },
 
-    select: function(stop){
-      Chaplin.mediator.publish('unselect:all');
+    selectStop: function(stop){
 
-      this.model.set( stop.toJSON() );
- 
+      Chaplin.mediator.publish('unselect:shape');
+
       this.model.relations.times.fetch({
         eager:true
       });
 
       this.$('.alert').hide();
-
       this.open();
     },
 
@@ -121,14 +118,10 @@ define([
           shapeId = target.data('shape-id');
       this.$('.arrivals a.active').removeClass('active');
       target.addClass('active');
-      Chaplin.mediator.publish('select:route', shapeId);
-      e.preventDefault();
-    },
-
-    onTogglePanel: function(e){
-      this.sidebar.show();
+      Chaplin.mediator.publish('select:shape', shapeId);
       e.preventDefault();
     }
+
 
   });
 
