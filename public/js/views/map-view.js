@@ -73,7 +73,7 @@ define([
 
       map = this.map = L.map('map');
       this.map.setView([0, 0], 2);
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer('http://a.tiles.mapbox.com/v3/elf-pavlik.map-qtc6poel/{z}/{x}/{y}.png', {
           maxZoom: 18,
           minZoom:12,
           attribution: 'Map data &copy; OpenStreetMap contributors'
