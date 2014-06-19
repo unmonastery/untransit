@@ -30,7 +30,7 @@ define([
                         async:false,
                         url:'./data/' + dataset + '/' + file + '.txt'
                       }).done( function(data){
-                       var result = new CSV(data, { header: true, cast:false }).parse();
+                       var result = new CSV(data, { header: true, cast:false, line: '\n' }).parse();
                        singleton[file] = result;
                      });
                     });
