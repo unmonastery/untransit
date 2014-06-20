@@ -143,7 +143,7 @@ define([
           return L.latLng(model.get('shape_pt_lat'), model.get('shape_pt_lon') );
         } );
         polyline = L.polyline(latlngs, {
-          color: 'blue',
+          color: '#' + Math.floor(Math.random()*16777215).toString(16),
           weight:2,
           opacity:0.3
         }).addTo(this.map);
