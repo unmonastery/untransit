@@ -30,6 +30,7 @@ define([
     },
 
     show: function(params) {
+      console.log(params);
       var models = this.models;
       this.view = new MapView({
         collections: this.collections,

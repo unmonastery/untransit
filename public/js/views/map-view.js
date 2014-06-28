@@ -14,20 +14,20 @@ define([
   function createIcon(zoom){
     if ( zoom > 15 ){
       return L.icon({
-              iconUrl: 'img/bus-24.png',
-              iconRetinaUrl: 'img/bus-24@2x.png',
+              iconUrl: '/img/bus-24.png',
+              iconRetinaUrl: '/img/bus-24@2x.png',
               iconAnchor: [15, 15]
             });
     } else if ( zoom<=15 && zoom > 13 ) {
       return L.icon({
-              iconUrl: 'img/bus-18.png',
-              iconRetinaUrl: 'img/bus-18@2x.png',
+              iconUrl: '/img/bus-18.png',
+              iconRetinaUrl: '/img/bus-18@2x.png',
               iconAnchor: [8, 8]
             });
     } else {
       return L.icon({
-              iconUrl: 'img/bus-12.png',
-              iconRetinaUrl: 'img/bus-12@2x.png',
+              iconUrl: '/img/bus-12.png',
+              iconRetinaUrl: '/img/bus-12@2x.png',
               iconAnchor: [5, 5]
             });
     }

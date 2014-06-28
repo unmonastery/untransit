@@ -1,6 +1,17 @@
-var express = require('express');
-var app = express();
+// from http://heu.io/posts/push-state-with-nodejs-and-express/
 
-app.use(express.static(__dirname + '/public'));
+var express = require('express'),
+    path = require('path'),
+    port = process.env.PORT || 8080,
+    app = express();
 
-app.listen(process.env.PORT || 1337);
+app.configure(function() {
+  app.use(express.static(__dirname + '/public'));
+});
+
+app.get('*', function(request, response){
+  response.sendfile('./public/index.html');
+});
+
+app.listen(port);
+console.log("server started on port " + port);

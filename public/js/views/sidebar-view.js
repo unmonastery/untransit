@@ -4,11 +4,13 @@ define([
   'chaplin',
   'sidebar',
   'views/base/view',
+  'views/base/collection-view',
+  'views/stoptime-view',
   'models/stop',
   'text!templates/sidebar.hbs',
   'text!templates/stop-time.hbs',
   'easybtn'
-], function($, moment, Chaplin, sidebar, View, Stop, template, timeTmpl) {
+], function($, moment, Chaplin, sidebar, View, CollectionView, StopTimeView, Stop, template, timeTmpl) {
   'use strict';
 
   function isAboutNow( time ){
@@ -48,6 +50,10 @@ define([
       'click .arrivals a': 'onSelectTrip'
     },
 
+    regions: {
+      arrivals: '#arrivals'
+    },
+
     initialize: function(options){
       _.extend(this, options);
       this.model = this.models.stop;
@@ -58,8 +64,17 @@ define([
       this.model.relations.times.comparator = function(time){
         return time.get('arrival_time');
       };
+
       View.prototype.pass.call(this, '#title', 'stop_name');
       View.prototype.pass.call(this, '#arrivals', 'times', timeTmpl);
+      /* var StopTimesView = CollectionView.extend({
+        autoRender: true,
+        collection:this.model.relations.times,
+        itemView: StopTimeView,
+        region: 'arrivals'
+      });*/
+
+
       this.on('renderedSubview', function(){
 
         self.$('.arrivals a').each(function(index, item){

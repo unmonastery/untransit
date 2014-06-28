@@ -7,7 +7,7 @@ define([
 
   // load GTFS data and store them on localstorage
 
-  var  files = [ 'agency', 'calendar', 'calendar_dates', 
+  var  files = [ 'agency', 'calendar', 'calendar_dates',
                  'routes', 'stop_times', 'stops', 'trips', 'shapes' ],
        dataset = options.dataset,
        GTFSModel = {
@@ -24,18 +24,18 @@ define([
                 },
                 load: function( callback ){
                     var singleton = GTFSModel.getInstance();
-                    
+
                     _.each(files, function(file){
                       $.ajax({
                         async:false,
-                        url:'./data/' + dataset + '/' + file + '.txt'
+                        url:'/data/' + dataset + '/' + file + '.txt'
                       }).done( function(data){
                        var result = new CSV(data, { header: true, cast:false }).parse();
                        singleton[file] = result;
                      });
                     });
-                    
-                    
+
+
                     callback.call(this);
                 }
 
@@ -44,4 +44,3 @@ define([
   return GTFSModel;
 
 });
-
