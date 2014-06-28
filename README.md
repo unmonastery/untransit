@@ -9,7 +9,7 @@ In order to install dependencies and start the server, type the follwing command
 
 Now the app is running at http://localhost:8080
 
-## Setting GTFS dataset
+## Setting a GTFS dataset
 
 GTFS files are located in directory /public/data
 
@@ -33,6 +33,9 @@ Show all stops
 Show stop pv0101 (Pavia dataset)
 
     http://localhost:8080/stops/pv0101
+
+When you click on a time in the stop panel,
+the route followed by that particular trip is highlighted.
 
 ## Credits
 
