@@ -35,9 +35,12 @@ define([
           model.fetch({eager:true});
         });
       }
-        
-      this.trigger('reset', this); 
-      
+
+      this.trigger('reset', this);
+      if (options.success){
+        options.success.call(undefined, this);
+      }
+
     }
   });
 

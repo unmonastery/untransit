@@ -27,10 +27,10 @@ define([
       Chaplin.mediator.subscribe('select:stop', _.bind(this.selectStop, this) );
       Chaplin.mediator.subscribe('select:shape', _.bind(this.selectShape, this) );
       Chaplin.mediator.subscribe('unselect:shape', _.bind(this.unselectShape, this) );
+
     },
 
     show: function(params) {
-      console.log(params);
       var models = this.models;
       this.view = new MapView({
         collections: this.collections,
@@ -45,7 +45,7 @@ define([
           if (stopId){
             stop = collection.findWhere({'stop_id':stopId});
             if (stop){
-              models.set( stop.toJSON() );
+              models.stop.set( stop.toJSON() );
             } else {
               alert('No stop found with id ' + stopId);
             }
@@ -54,8 +54,6 @@ define([
       });
       this.collections.shapes.fetch({reset:true});
     },
-
-    // TODO change also url
 
     selectStop: function(stopId){
       var stop = this.collections.stops.findWhere({'stop_id':stopId});
