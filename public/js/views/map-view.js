@@ -73,7 +73,7 @@ define([
 
       map = this.map = L.map('map');
       this.map.setView([0, 0], 2);
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer('http://a.tiles.mapbox.com/v3/elf-pavlik.map-qtc6poel/{z}/{x}/{y}.png', {
           maxZoom: 18,
           minZoom:12,
           attribution: 'Map data &copy; OpenStreetMap contributors'
@@ -143,7 +143,7 @@ define([
           return L.latLng(model.get('shape_pt_lat'), model.get('shape_pt_lon') );
         } );
         polyline = L.polyline(latlngs, {
-          color: 'blue',
+          color: '#' + Math.floor(Math.random()*16777215).toString(16),
           weight:2,
           opacity:0.3
         }).addTo(this.map);

@@ -2,7 +2,7 @@
   "name": "unTransit",
   "version": "0.1.0",
   "main": "index.js",
-  "protocol":"https",
+  "protocol": "https",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,8 +18,8 @@
     "requirejs-text": "~2.0.9",
     "handlebars": "~1.0.0",
     "bootstrap": "~3.1.1",
-    "leaflet":"~0.7",
-    "comma-separated-values":"*",
-    "moment":"*"
+    "leaflet": "~0.7.3",
+    "moment": "~2.7.0",
+    "comma-separated-values": "~3.2.0"
   }
 }
