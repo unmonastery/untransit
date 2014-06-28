@@ -1,7 +1,7 @@
 {
-  "name": "unTransit",
-  "version": "0.1.0",
-  "dependencies": {
-    "express": "3.0"
-  }
+    "name": "unTransit",
+    "version": "0.1.0",
+    "dependencies": {
+        "express": "3.0"
+    }
 }
