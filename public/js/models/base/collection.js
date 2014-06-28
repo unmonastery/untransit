@@ -40,6 +40,7 @@ define([
       if (options.success){
         options.success.call(undefined, this);
       }
+      return this;
 
     }
   });

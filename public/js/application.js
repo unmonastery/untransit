@@ -2,24 +2,22 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
  // 'use strict';
 
   function showBlockUi(){
-        $.blockUI({ css: { 
+        $.blockUI({ css: {
                 'z-index':9999,
-                border: 'none', 
-                padding: '15px', 
-                backgroundColor: '#000', 
-                '-webkit-border-radius': '10px', 
-                '-moz-border-radius': '10px', 
-                opacity: .5, 
-                color: '#fff' 
+                border: 'none',
+                padding: '15px',
+                backgroundColor: '#000',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                opacity: .5,
+                color: '#fff'
             } });
     };
 
     function hideBlockUi(){
         $.unblockUI();
     };
-
-  window.Chaplin = Chaplin;
-
+    
   // The application object
   // Choose a meaningful name for your application
   var Application = Chaplin.Application.extend({

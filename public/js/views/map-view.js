@@ -115,6 +115,7 @@ define([
             lng = stop.get('stop_lon'),
             latlng = L.latLng(lat, lng);
         if (!markers[ stop.get('stop_id') ]){
+
            marker = L.marker(latlng, {
             icon:createIcon(currentZoom)
           })
@@ -123,6 +124,7 @@ define([
             // e.preventDefault();
            })
            .on('click', function(e){
+              var now = (new Date).getTime();
               Chaplin.mediator.publish('select:stop', stop.get('stop_id'));
               // e.preventDefault();
           }).addTo(map);

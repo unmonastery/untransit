@@ -1,10 +1,11 @@
 define([
+  'chaplin',
   'controllers/base/controller',
   'views/map-view',
   'models/base/collection',
   'models/stop',
   'models/shape'
-], function(Controller, MapView, Collection, Stop, Shape) {
+], function(Chaplin, Controller, MapView, Collection, Stop, Shape) {
   'use strict';
 
   var MapController = Controller.extend({
@@ -32,11 +33,15 @@ define([
 
     show: function(params) {
       var models = this.models;
-      this.view = new MapView({
-        collections: this.collections,
-        models: this.models,
-        region: 'main'
-      });
+
+      if ( !this.view ){
+        this.view = new MapView({
+          collections: this.collections,
+          models: this.models,
+          region: 'main'
+        });
+      }
+
       this.collections.stops.fetch({
         reset:true,
         success:function(collection){
@@ -56,10 +61,9 @@ define([
     },
 
     selectStop: function(stopId){
-      var stop = this.collections.stops.findWhere({'stop_id':stopId});
-      if (stop){
-        this.models.stop.set( stop.toJSON() );
-      }
+      this.show({ stopId: stopId });
+      window.history.pushState('stop_' + stopId, 'Fermata ' + stopId, '/stops/' + stopId);
+      // Chaplin.utils.redirectTo({url: '/stops/' + stopId});
     },
 
     selectShape: function(shapeId){
