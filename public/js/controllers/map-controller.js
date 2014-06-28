@@ -29,6 +29,7 @@ define([
       Chaplin.mediator.subscribe('select:shape', _.bind(this.selectShape, this) );
       Chaplin.mediator.subscribe('unselect:shape', _.bind(this.unselectShape, this) );
 
+      $.unblockUI();
     },
 
     show: function(params) {

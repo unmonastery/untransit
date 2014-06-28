@@ -1,5 +1,5 @@
 define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gtfs, ui) {
- // 'use strict';
+  'use strict';
 
   function showBlockUi(){
         $.blockUI({ css: {
@@ -14,10 +14,6 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
             } });
     };
 
-    function hideBlockUi(){
-        $.unblockUI();
-    };
-    
   // The application object
   // Choose a meaningful name for your application
   var Application = Chaplin.Application.extend({
@@ -27,8 +23,9 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
     start: function() {
       var args = [].slice.call(arguments)
           self = this;
+          showBlockUi();
       gtfs.load(function(){
-          Chaplin.Application.prototype.start.apply(self, args)
+          Chaplin.Application.prototype.start.apply(self, args);
       });
     }
   });
