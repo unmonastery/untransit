@@ -4,8 +4,10 @@
 In order to install dependencies and start the server, type the follwing commands
 
     $ npm install
+    $ grunt
     $ bower install
     $ node server.js
+    
 
 Now the app is running at http://localhost:8080
 
