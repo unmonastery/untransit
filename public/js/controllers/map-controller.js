@@ -33,7 +33,7 @@ define([
     },
 
     show: function(params) {
-    //  var models = this.models;
+      var models = this.models;
 
       if ( !this.view ){
         this.view = new MapView({
@@ -58,7 +58,7 @@ define([
           }
         }
       });
-      this.collections.shapes.fetch({reset:true}); 
+      this.collections.shapes.fetch({reset:true});
     },
 
     selectStop: function(stopId){
