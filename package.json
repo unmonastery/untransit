@@ -2,6 +2,14 @@
   "name": "unTransit",
   "version": "0.1.0",
   "dependencies": {
-    "express": "3.0"
+    "async": "^0.9.0",
+    "express": "3.0",
+    "grunt": "^0.4.5",
+    "lodash": "^2.4.1",
+    "ya-csv": "^0.9.3"
+  },
+  "config": {
+    "csvDir": "public/data",
+    "jsonDir": "public/json"
   }
 }

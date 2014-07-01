@@ -72,7 +72,7 @@ define([
       var map, placeHolder, markers = this.markers;
 
       map = this.map = L.map('map');
-      this.map.setView([0, 0], 2);
+      this.map.setView([40.666667,16.6], 2);
       L.tileLayer('http://a.tiles.mapbox.com/v3/elf-pavlik.map-qtc6poel/{z}/{x}/{y}.png', {
           maxZoom: 18,
           minZoom:12,

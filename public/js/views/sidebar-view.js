@@ -67,12 +67,12 @@ define([
 
       View.prototype.pass.call(this, '#title', 'stop_name');
       View.prototype.pass.call(this, '#arrivals', 'times', timeTmpl);
-      /* var StopTimesView = CollectionView.extend({
+      var StopTimesView = CollectionView.extend({
         autoRender: true,
         collection:this.model.relations.times,
         itemView: StopTimeView,
         region: 'arrivals'
-      });*/
+      });
 
 
       this.on('renderedSubview', function(){
