@@ -1,8 +1,0 @@
-clean code
-
-
-update current time every min
-
-find some trick to load times faster
-
-use maki icons

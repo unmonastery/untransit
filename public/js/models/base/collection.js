@@ -1,11 +1,10 @@
 define([
   'chaplin',
   'models/gtfs'
-], function(Chaplin, gtfs) {
+], function(Chaplin, storage) {
   'use strict';
 
-  var storage = gtfs.getInstance(),
-  Collection = Chaplin.Collection.extend({
+  var Collection = Chaplin.Collection.extend({
 
     constructor: function(data, options){
 
@@ -23,25 +22,27 @@ define([
     fetch: function(options){
       var data, self = this;
       if (!this.model) return;
-      data = storage.get( this.model.prototype.collection );
-      if (this.query){
-        data = _.where(data, this.query);
-      }
+      storage[ this.model.prototype.collection ]
+          .call(undefined)
+          .done(function(data){
+            if (self.query){
+              data = _.where(data, self.query);
+            }
 
-      this.reset(data, {reset:false});
+            self.reset(data, {reset:false});
 
-      if (options && options.eager){
-        this.forEach( function(model){
-          model.fetch({eager:true});
-        });
-      }
+            if (options && options.eager){
+              self.forEach( function(model){
+                model.fetch({eager:true});
+              });
+            }
 
-      this.trigger('reset', this);
-      if (options.success){
-        options.success.call(undefined, this);
-      }
+            self.trigger('reset', self);
+            if (options.success){
+              options.success.call(undefined, self);
+            }
+          });
       return this;
-
     }
   });
 

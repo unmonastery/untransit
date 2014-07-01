@@ -3,7 +3,7 @@ define([
   'chaplin',
   'models/base/collection',
   'models/gtfs'
-], function(_, Chaplin, Collection, gtfs) {
+], function(_, Chaplin, Collection, storage) {
   'use strict';
 
   function one2many(name, to){
@@ -12,7 +12,7 @@ define([
     var query = {}, collection,
         fieldName = from.name + '_id',
         stopId = from.get( fieldName );
-    query[ fieldName ] = stopId; 
+    query[ fieldName ] = stopId;
     collection = new Collection([], { query:query, model:to, reset:true } );
     from.listenTo( this, 'change:' + fieldName, function(){
       collection.query[fieldName] = from.get(fieldName);
@@ -38,8 +38,7 @@ define([
     };
   };
 
-  var storage = gtfs.getInstance(),
-  Model = Chaplin.Model.extend({
+  var Model = Chaplin.Model.extend({
 
     constructor: function(){
       Chaplin.Model.prototype.constructor.apply(this, arguments);

@@ -22,11 +22,8 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
     title: 'unTransit',
     start: function() {
       var args = [].slice.call(arguments)
-          self = this;
           showBlockUi();
-      gtfs.load(function(){
-          Chaplin.Application.prototype.start.apply(self, args);
-      });
+      Chaplin.Application.prototype.start.apply(this, args);
     }
   });
 
