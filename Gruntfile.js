@@ -30,7 +30,24 @@ module.exports = function(grunt){
   var config;
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json')
+    pkg: grunt.file.readJSON('package.json'),
+    update_submodules: {
+        default: {
+            options: {
+                // default command line parameters will be used: --init --recursive
+            }
+        },
+        withCustomParameters: {
+            options: {
+                params: "--force" // specifies your own command-line parameters
+            }
+        },
+        withNoParameter: {
+            options: {
+                params: false // blanks command-line parameters
+            }
+        }
+    }
   });
 
   config = grunt.config('pkg').config;
@@ -46,7 +63,9 @@ module.exports = function(grunt){
       if ( fs.lstatSync(config.csvDir + '/' + dir).isDirectory() ){
         var files = fs.readdirSync( config.csvDir + '/' + dir ),
             destDir = config.jsonDir + '/' + dir;
-        rmdir( destDir );
+        if ( fs.existsSync(destDir) ){
+          rmdir( destDir );
+        }
         fs.mkdirSync( destDir );
         _.each(files, function(file, index){
           var src = config.csvDir + '/' + dir + '/' + file,
@@ -84,5 +103,9 @@ module.exports = function(grunt){
     });
 
   });
+
+  grunt.loadNpmTasks("grunt-update-submodules");
+
+  grunt.registerTask('default', ['update_submodules']);
 
 };

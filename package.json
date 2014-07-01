@@ -5,6 +5,7 @@
     "async": "^0.9.0",
     "express": "3.0",
     "grunt": "^0.4.5",
+    "grunt-update-submodules":"*",
     "lodash": "^2.4.1",
     "ya-csv": "^0.9.3"
   },
