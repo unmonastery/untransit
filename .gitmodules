@@ -1,0 +1,3 @@
+[submodule "public/data/matera"]
+	path = public/data/matera
+	url = git://github.com/unmonastery/matera-gtfs.git
