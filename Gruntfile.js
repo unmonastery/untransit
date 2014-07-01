@@ -63,6 +63,9 @@ module.exports = function(grunt){
       if ( fs.lstatSync(config.csvDir + '/' + dir).isDirectory() ){
         var files = fs.readdirSync( config.csvDir + '/' + dir ),
             destDir = config.jsonDir + '/' + dir;
+        if ( !fs.existsSync(config.jsonDir) ){
+          fs.mkdirSync( config.jsonDir );
+        }
         if ( fs.existsSync(destDir) ){
           rmdir( destDir );
         }
