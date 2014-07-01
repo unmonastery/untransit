@@ -7,7 +7,7 @@ In order to install dependencies and start the server, type the follwing command
     $ grunt
     $ bower install
     $ node server.js
-    
+
 
 Now the app is running at http://localhost:8080
 
@@ -16,6 +16,10 @@ Now the app is running at http://localhost:8080
 GTFS files are located in directory /public/data
 
 GTFS files are grouped by cities. At the moment, you can select just one city dataset.
+
+You need to generate json files from csv files with this command
+
+    $ grunt csv2json
 
 You can choose which dataset to use changing app config file
 in /js/config/options.js

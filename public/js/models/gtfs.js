@@ -28,10 +28,10 @@ define([
                     _.each(files, function(file){
                       $.ajax({
                         async:false,
-                        url:'/data/' + dataset + '/' + file + '.txt'
+                        dataType:'json',
+                        url:'/json/' + dataset + '/' + file + '.txt'
                       }).done( function(data){
-                       var result = new CSV(data, { header: true, cast:false, line: '\n' }).parse();
-                       singleton[file] = result;
+                       singleton[file] = data;
                      });
                     });
 

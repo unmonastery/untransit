@@ -1,3 +1,3 @@
 define({
-    'dataset': 'matera'
+    'dataset': 'pavia'
 });

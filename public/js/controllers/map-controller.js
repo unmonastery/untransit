@@ -11,7 +11,7 @@ define([
   var MapController = Controller.extend({
 
     initialize: function(){
-    /*  this.collections = {
+      this.collections = {
         stops: new Collection([], {
           model:Stop
         }),
@@ -23,7 +23,7 @@ define([
       this.models = {
         stop: new Stop(),
         shape: new Shape()
-      };*/
+      };
 
       Chaplin.mediator.subscribe('select:stop', _.bind(this.selectStop, this) );
       Chaplin.mediator.subscribe('select:shape', _.bind(this.selectShape, this) );
@@ -43,7 +43,7 @@ define([
         });
       }
 
-    /*  this.collections.stops.fetch({
+     this.collections.stops.fetch({
         reset:true,
         success:function(collection){
           var stopId = params.stopId,
@@ -58,7 +58,7 @@ define([
           }
         }
       });
-      this.collections.shapes.fetch({reset:true}); */
+      this.collections.shapes.fetch({reset:true}); 
     },
 
     selectStop: function(stopId){
