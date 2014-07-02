@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/unmonastery/untransit.png)](http://waffle.io/unmonastery/untransit)
 
 ## Install and run
 
