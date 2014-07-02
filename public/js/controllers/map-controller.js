@@ -2,12 +2,13 @@ define([
   'chaplin',
   'controllers/base/controller',
   'views/map-view',
-  'views/layer-view',
+  'views/stop-layer-view',
+  'views/shape-layer-view',
   'views/sidebar-view',
   'models/base/collection',
   'models/stop',
   'models/shape'
-], function(Chaplin, Controller, MapView, LayerView, SidebarView, Collection, Stop, Shape) {
+], function(Chaplin, Controller, MapView, StopLayerView, ShapeLayerView, SidebarView, Collection, Stop, Shape) {
   'use strict';
 
   var MapController = Controller.extend({
@@ -46,7 +47,11 @@ define([
           models: this.models,
           region: 'main'
         }),
-        stopLayer: new LayerView({
+        stopLayer: new StopLayerView({
+          collections: this.collections,
+          models: this.models
+        }),
+        shapeLayer: new ShapeLayerView({
           collections: this.collections,
           models: this.models
         }),
@@ -65,7 +70,9 @@ define([
     },
 
     setMap: function(map){
+      // should we create map subviews instead?
       this.views.stopLayer.onReady(map);
+      this.views.shapeLayer.onReady(map);
       this.views.sidebar.onReady(map);
     },
 
@@ -81,10 +88,9 @@ define([
     },
 
     selectShape: function(shapeId){
-      var shape = this.collections.shapes.findWhere({'shape_id':shapeId});
-      if (shape){
-        this.models.shape.set( shape.toJSON() );
-      }
+      var shape = new Shape({'shape_id':shapeId});
+      shape.fetch();
+      this.models.shape.set( shape.toJSON() );
     },
 
     unselectShape: function(){

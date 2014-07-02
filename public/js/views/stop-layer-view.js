@@ -42,7 +42,7 @@ define([
       this.map = map;
       this.layer = L.layerGroup().addTo(map);
       this.listenTo( map, 'zoomend', this.onBoundsChanged );
-      this.listenTo( map, 'dragend', this.onBoundsChanged )
+      this.listenTo( map, 'dragend', this.onBoundsChanged );
     },
 
     onReset: function(){
