@@ -11,6 +11,11 @@ In order to install dependencies and start the server, type the follwing command
 
 Now the app is running at http://localhost:8080
 
+## Contributing
+
+Pleaese read
+[CONTRIBUTING.md](https://github.com/unmonastery/untransit/blob/master/CONTRIBUTING.md)
+
 ## Setting a GTFS dataset
 
 GTFS files are located in directory /public/data

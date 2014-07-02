@@ -47,6 +47,9 @@ module.exports = function(grunt){
                 params: false // blanks command-line parameters
             }
         }
+    },
+    jshint: {
+      all: ['Gruntfile.js', 'public/js/**/*.js']
     }
   });
 
@@ -108,7 +111,9 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks("grunt-update-submodules");
+  grunt.loadNpmTasks("grunt-contrib-jshint");
 
   grunt.registerTask('default', ['update_submodules']);
+  grunt.registerTask('validate', ['jshint']);
 
 };
