@@ -62,13 +62,15 @@ define([
     },
 
     pass: function(selector, attribute, template){
-      var $el, self = this;
+      var $el, self = this, value;
       if (!this.model) return;
       $el = this.$(selector);
       if ($el){
-        $el.text( this.model.get(attribute) );
+        value = this.model.get(attribute);
+        $el.text( value );
       }
       this.listenTo( this.model, "change:" + attribute, function(model, value){
+
         if (_.isArray(value) ){
           this.$(selector).empty();
           _.each( value, function(item){
@@ -76,6 +78,7 @@ define([
           });
           self.trigger('renderedSubview');
         } else {
+          value = value || 'unknown';
           this.$(selector).text(value);
         }
       });
