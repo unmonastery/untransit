@@ -56,12 +56,14 @@ define([
     initialize: function(options){
       _.extend( this, options );
 
+      this.stopLayer = L.layerGroup();
+
       // keep track of markers and polylines
       this.markers = {};
       this.polylines = {};
 
-      this.listenTo( this.collections.stops, 'reset', this.showStops);
-      this.listenTo( this.collections.shapes, 'reset', this.showRoutes);
+      // this.listenTo( this.collections.stops, 'reset', this.showStops);
+      // this.listenTo( this.collections.shapes, 'reset', this.showRoutes);
       this.listenTo( this.models.stop, 'change:stop_id', this.selectStop );
       this.listenTo( this.models.shape, 'change:shape_id', this.selectShape );
 
@@ -72,12 +74,14 @@ define([
       var map, placeHolder, markers = this.markers;
 
       map = this.map = L.map('map');
-      this.map.setView([40.666667,16.6], 2);
-      L.tileLayer('http://a.tiles.mapbox.com/v3/elf-pavlik.map-qtc6poel/{z}/{x}/{y}.png', {
+      this.map.setView([40.666667,16.6], 12);
+      L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
         maxZoom: 18,
         minZoom:12,
         attribution: 'Map data &copy; OpenStreetMap contributors'
       }).addTo(this.map);
+
+      this.stopLayer.addTo( this.map );
 
       placeHolder = this.placeHolder = L.circle([0,0],
         calculateSize( this.map.getZoom() ),{
@@ -96,12 +100,48 @@ define([
         placeHolder.setRadius( calculateSize(currentZoom) );
       });
 
+      map.on('zoomend', _.bind(this.drawMarkers, this));
+      map.on('dragend', _.bind(this.drawMarkers, this));
+
       this.sidebar = new SidebarView({
         models: this.models,
         // region:'sidebar',
         map: map
       });
 
+    },
+
+    drawMarkers: function(){
+      var zoom = this.map.getZoom(),
+          visibleStops,
+          bounds;
+
+      this.stopLayer.clearLayers();
+
+      if (zoom > 15 && zoom <= 18){
+
+        bounds = this.map.getBounds();
+
+        visibleStops = this.collections.stops.filter(function(stop){
+          var lat = stop.get('stop_lat'),
+              lng = stop.get('stop_lon'),
+              latlng = L.latLng(lat, lng);
+          return bounds.contains(latlng);
+        });
+
+
+        _.each(visibleStops, function(stop){
+          var lat = stop.get('stop_lat'),
+              lng = stop.get('stop_lon'),
+              latlng = L.latLng(lat, lng);
+            L.marker(latlng, {
+              icon:createIcon(zoom)
+            }).on('click', function(e){
+              Chaplin.mediator.publish('select:stop', stop.get('stop_id'));
+            }).addTo(this.stopLayer);
+          }.bind(this));
+
+        }
     },
 
     showStops: function(){

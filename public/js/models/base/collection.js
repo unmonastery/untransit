@@ -28,7 +28,7 @@ define([
         data = _.where(data, this.query);
       }
 
-      this.reset(data, {reset:false});
+      this.reset(data, {silent:false});
 
       if (options && options.eager){
         this.forEach( function(model){
