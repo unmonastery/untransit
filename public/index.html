@@ -6,64 +6,13 @@
 
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/L.Control.Sidebar.css" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/maki-sprite.css" />
 
-  <script src="/bower_components/requirejs/require.js"></script>
-  <script>
-  // Configure the AMD module loader
-  requirejs.config({
-    // The path where your JavaScripts are located
-    baseUrl: '/js/',
-    // Specify the paths of vendor libraries
-    paths: {
-      jquery: '../bower_components/jquery/jquery',
-      underscore: '../bower_components/lodash/dist/lodash',
-      backbone: '../bower_components/backbone/backbone',
-      bootstrap: '../bower_components/bootstrap/dist/js/bootstrap',
-      handlebars: '../bower_components/handlebars/handlebars',
-      leaflet: '../bower_components/leaflet/dist/leaflet',
-      text: '../bower_components/requirejs-text/text',
-      chaplin: '../bower_components/chaplin/chaplin',
-      sidebar: '../lib/L.Control.Sidebar',
-      easybtn:'../../lib/easy-button',
-      csv: '../bower_components/comma-separated-values/csv',
-      moment: '../bower_components/moment/moment'
-    },
-    // Underscore and Backbone are not AMD-capable per default,
-    // so we need to use the AMD wrapping of RequireJS
-    shim: {
-      underscore: {
-        exports: '_'
-      },
-      backbone: {
-        deps: ['underscore', 'jquery'],
-        exports: 'Backbone'
-      },
-      handlebars: {
-        exports: 'Handlebars'
-      },
-      easybtn: {
-        deps: ['leaflet']
-      },
-      sidebar: {
-        deps: ['leaflet']
-      }
-    }
-    // For easier development, disable browser caching
-    // Of course, this should be removed in a production environment
-    //, urlArgs: 'bust=' +  (new Date()).getTime()
-  });
+  <script data-main="/js/main" src="/bower_components/requirejs/require.js"></script>
 
-  // Bootstrap the application
-  require(['application', 'routes'], function(Application, routes) {
-    new Application({routes: routes, controllerSuffix: '-controller'});
-  });
-  </script>
 </head>
 <body></body>
 </html>
