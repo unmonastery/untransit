@@ -47,7 +47,7 @@ define([
 
     onReset: function(){
       var zoom = this.map.getZoom();
-      this.layer.clearLayers();
+
       this.collections.stops.forEach(
        function(stop){
         var lat = stop.get('stop_lat'),
@@ -65,6 +65,8 @@ define([
       var zoom = this.map.getZoom(),
           visibleStops,
           bounds;
+
+      this.layer.clearLayers();
 
       if (zoom > 15 && zoom <= 18){
         bounds = this.map.getBounds();
