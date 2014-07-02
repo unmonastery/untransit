@@ -2,17 +2,17 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
   'use strict';
 
   function showBlockUi(){
-        $.blockUI({ css: {
-                'z-index':9999,
-                border: 'none',
-                padding: '15px',
-                backgroundColor: '#000',
-                '-webkit-border-radius': '10px',
-                '-moz-border-radius': '10px',
-                opacity: .5,
-                color: '#fff'
-            } });
-    };
+    $.blockUI({ css: {
+      'z-index':9999,
+      border: 'none',
+      padding: '15px',
+      backgroundColor: '#000',
+      '-webkit-border-radius': '10px',
+      '-moz-border-radius': '10px',
+      opacity: 0.5,
+      color: '#fff'
+    } });
+  }
 
   // The application object
   // Choose a meaningful name for your application
@@ -25,7 +25,7 @@ define(['chaplin', 'models/gtfs', '../lib/jquery.blockUI'], function(Chaplin, gt
           self = this;
       showBlockUi();
       gtfs.load(function(){
-          Chaplin.Application.prototype.start.apply(self, args);
+        Chaplin.Application.prototype.start.apply(self, args);
       });
     }
   });

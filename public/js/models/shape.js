@@ -6,9 +6,9 @@ define([
 
   var Shape = Model.extend({
 
-    name:'shape',
-    collection:'shapes'
-    
+    name: 'shape',
+    collection: 'shapes'
+
   });
 
   return Shape;

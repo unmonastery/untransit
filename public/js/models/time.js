@@ -8,12 +8,12 @@ define([
 
   var Time = Model.extend({
 
-  	relations: {
-  		trip:Trip
-  	},
-    name:'time',
-    collection:'stop_times'
-    
+    relations: {
+      trip:Trip
+    },
+    name: 'time',
+    collection: 'stop_times'
+
   });
 
   return Time;

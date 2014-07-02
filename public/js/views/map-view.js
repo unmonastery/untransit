@@ -14,31 +14,31 @@ define([
   function createIcon(zoom){
     if ( zoom > 15 ){
       return L.icon({
-              iconUrl: '/img/bus-24.png',
-              iconRetinaUrl: '/img/bus-24@2x.png',
-              iconAnchor: [15, 15]
-            });
+        iconUrl: '/img/bus-24.png',
+        iconRetinaUrl: '/img/bus-24@2x.png',
+        iconAnchor: [15, 15]
+      });
     } else if ( zoom<=15 && zoom > 13 ) {
       return L.icon({
-              iconUrl: '/img/bus-18.png',
-              iconRetinaUrl: '/img/bus-18@2x.png',
-              iconAnchor: [8, 8]
-            });
+        iconUrl: '/img/bus-18.png',
+        iconRetinaUrl: '/img/bus-18@2x.png',
+        iconAnchor: [8, 8]
+      });
     } else {
       return L.icon({
-              iconUrl: '/img/bus-12.png',
-              iconRetinaUrl: '/img/bus-12@2x.png',
-              iconAnchor: [5, 5]
-            });
+        iconUrl: '/img/bus-12.png',
+        iconRetinaUrl: '/img/bus-12@2x.png',
+        iconAnchor: [5, 5]
+      });
     }
 
-  };
+  }
 
   function calculateSize(zoom){
-      // 200 : 12, 10 : 18
-      // assume linear, not best option!
-      return  (-95*zoom+1740)/3;
-  };
+    // 200 : 12, 10 : 18
+    // assume linear, not best option!
+    return  (-95*zoom+1740)/3;
+  }
 
   var MapView = View.extend({
     // Automatically render after initialize
@@ -74,9 +74,9 @@ define([
       map = this.map = L.map('map');
       this.map.setView([40.666667,16.6], 2);
       L.tileLayer('http://a.tiles.mapbox.com/v3/elf-pavlik.map-qtc6poel/{z}/{x}/{y}.png', {
-          maxZoom: 18,
-          minZoom:12,
-          attribution: 'Map data &copy; OpenStreetMap contributors'
+        maxZoom: 18,
+        minZoom:12,
+        attribution: 'Map data &copy; OpenStreetMap contributors'
       }).addTo(this.map);
 
       placeHolder = this.placeHolder = L.circle([0,0],
@@ -97,9 +97,9 @@ define([
       });
 
       this.sidebar = new SidebarView({
-          models: this.models,
-          // region:'sidebar',
-          map: map
+        models: this.models,
+        // region:'sidebar',
+        map: map
       });
 
     },
@@ -111,22 +111,22 @@ define([
 
       this.collections.stops.forEach(function(stop){
         var marker, currentZoom = map.getZoom(),
-            lat = stop.get('stop_lat'),
-            lng = stop.get('stop_lon'),
-            latlng = L.latLng(lat, lng);
+        lat = stop.get('stop_lat'),
+        lng = stop.get('stop_lon'),
+        latlng = L.latLng(lat, lng);
         if (!markers[ stop.get('stop_id') ]){
 
-           marker = L.marker(latlng, {
+          marker = L.marker(latlng, {
             icon:createIcon(currentZoom)
           })
-           .on('contextmenu', function(e){ /* long click */
-            // TODO do something
-            // e.preventDefault();
-           })
-           .on('click', function(e){
-              var now = (new Date).getTime();
-              Chaplin.mediator.publish('select:stop', stop.get('stop_id'));
+          .on('contextmenu', function(e){ /* long click */
+              // TODO do something
               // e.preventDefault();
+          })
+          .on('click', function(e){
+            var now = new Date().getTime();
+            Chaplin.mediator.publish('select:stop', stop.get('stop_id'));
+            // e.preventDefault();
           }).addTo(map);
           markers[ stop.get('stop_id') ] = marker;
         }
@@ -143,7 +143,7 @@ define([
       for ( key in groups ){
         latlngs = _.map( groups[key], function(model){
           return L.latLng(model.get('shape_pt_lat'), model.get('shape_pt_lon') );
-        } );
+        });
         polyline = L.polyline(latlngs, {
           color: '#' + Math.floor(Math.random()*16777215).toString(16),
           weight:2,

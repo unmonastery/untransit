@@ -43,7 +43,7 @@ define([
         });
       }
 
-     this.collections.stops.fetch({
+      this.collections.stops.fetch({
         reset:true,
         success:function(collection){
           var stopId = params.stopId,

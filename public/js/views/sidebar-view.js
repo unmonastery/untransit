@@ -15,11 +15,11 @@ define([
 
   function isAboutNow( time ){
     var t = moment( time, 'HH:mm:ss'),
-    now = moment( );
+        now = moment( );
 
     t.date( now.date() );
     t.month( now.month() );
-    t.year( now.year() )
+    t.year( now.year() );
 
     if ( t.isBefore(now) ){
       t.add(1, 'day');
@@ -30,7 +30,7 @@ define([
     }
 
     return false;
-  };
+  }
 
 
   var SidebarView = View.extend({
@@ -80,7 +80,7 @@ define([
 
         self.$('.arrivals a').each(function(index, item){
           var target = $(item), offset,
-              value  = target.data('value');
+          value  = target.data('value');
           if ( isAboutNow(value) ){ // TOFIX
             offset = target.position().top;
             self.$('.arrivals').scrollTop(offset - 100);
@@ -93,18 +93,18 @@ define([
     postRender: function(){
       var self = this;
       this.sidebar = L.control.sidebar('sidebar', {
-          closeButton: true,
-          position: 'left'
+        closeButton: true,
+        position: 'left'
       });
       this.map.addControl( this.sidebar );
 
       L.easyButton(
-          'fa-info',
-           function (){
-              self.open();
-           },
-          '',
-          this.map
+        'fa-info',
+        function (){
+          self.open();
+        },
+        '',
+        this.map
       ).setPosition('topright');
 
     },

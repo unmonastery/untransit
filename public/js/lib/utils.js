@@ -2,7 +2,7 @@ define([
   'underscore',
   'chaplin'
 ], function(_, Chaplin) {
-  'use strict'
+  'use strict';
 
   // Application-specific utilities
   // ------------------------------

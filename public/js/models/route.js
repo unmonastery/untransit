@@ -6,9 +6,9 @@ define([
 
   var Route = Model.extend({
 
-  	name:'route',
-    collection:'routes'
-    
+    name: 'route',
+    collection: 'routes'
+
   });
 
   return Route;

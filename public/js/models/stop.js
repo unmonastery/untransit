@@ -7,12 +7,12 @@ define([
 
   var Stop = Model.extend({
 
-  	relations: {
-  		times: [Time]
-  	},
-  	name:'stop',
-    collection:'stops'
-    
+    relations: {
+      times: [Time]
+    },
+    name: 'stop',
+    collection: 'stops'
+
   });
 
   return Stop;

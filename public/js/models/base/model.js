@@ -10,9 +10,9 @@ define([
     var from = this;
 
     var query = {}, collection,
-        fieldName = from.name + '_id',
-        stopId = from.get( fieldName );
-    query[ fieldName ] = stopId; 
+    fieldName = from.name + '_id',
+    stopId = from.get( fieldName );
+    query[ fieldName ] = stopId;
     collection = new Collection([], { query:query, model:to, reset:true } );
     from.listenTo( this, 'change:' + fieldName, function(){
       collection.query[fieldName] = from.get(fieldName);
@@ -21,13 +21,13 @@ define([
       from.set(name, collection.toJSON() );
     });
     return collection;
-  };
+  }
 
   function one2one(name, to){
     var from = this;
     return function(){
       var model, query = {},
-          oid = from.get( name + '_id' );
+      oid = from.get( name + '_id' );
       if (!oid) return;
       query[ name + '_id' ] = oid;
       model = new to(query);
@@ -36,7 +36,7 @@ define([
       });
       return model;
     };
-  };
+  }
 
   var storage = gtfs.getInstance(),
   Model = Chaplin.Model.extend({

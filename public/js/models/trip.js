@@ -8,13 +8,13 @@ define([
 
   var Trip = Model.extend({
 
-  	name:'trip',
-    collection:'trips',
-    relations:{
-      route:Route/* ,
-      shape:Shape*/
+    name: 'trip',
+    collection: 'trips',
+    relations: {
+      route: Route/* ,
+      shape: Shape*/
     }
-    
+
   });
 
   return Trip;

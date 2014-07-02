@@ -11,12 +11,12 @@ define([
 
       if (options){
 
-          if (options.query){
-            this.query = options.query;
-          }
-          if (options.model){
-            this.model = options.model;
-          }
+        if (options.query){
+          this.query = options.query;
+        }
+        if (options.model){
+          this.model = options.model;
+        }
       }
       Chaplin.Collection.prototype.constructor.call(this, data, options);
     },
