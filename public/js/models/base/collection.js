@@ -42,6 +42,14 @@ define([
       }
       return this;
 
+    },
+    search: function( filter ){
+      var data, filtered;
+      // very ugly hack
+      data = storage.get( this.model.prototype.collection );
+      this.reset(data, {silent:false});
+      filtered = this.filter(filter);
+      this.reset(filtered);
     }
   });
 

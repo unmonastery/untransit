@@ -1,9 +1,10 @@
 define([
+  'jquery',
   'underscore',
   'chaplin',
   'models/base/collection',
   'models/gtfs'
-], function(_, Chaplin, Collection, gtfs) {
+], function($, _, Chaplin, Collection, gtfs) {
   'use strict';
 
   function one2many(name, to){

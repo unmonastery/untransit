@@ -56,6 +56,7 @@ define([
 
     initialize: function(options){
       _.extend(this, options);
+
       this.model = this.models.stop;
 
       this.listenTo( this.model, 'change:stop_id', this.selectStop);
@@ -67,14 +68,6 @@ define([
 
       View.prototype.pass.call(this, '#title', 'stop_name');
       View.prototype.pass.call(this, '#arrivals', 'times', timeTmpl);
-
-      /* var StopTimesView = CollectionView.extend({
-        autoRender: true,
-        collection:this.model.relations.times,
-        itemView: StopTimeView,
-        region: 'arrivals'
-      }); */
-
 
       this.on('renderedSubview', function(){
 
@@ -88,10 +81,14 @@ define([
         });
 
       });
+
     },
 
-    postRender: function(){
+    onReady: function(map){
       var self = this;
+
+      this.map = map;
+
       this.sidebar = L.control.sidebar('sidebar', {
         closeButton: true,
         position: 'left'
@@ -115,13 +112,10 @@ define([
 
     selectStop: function(stop){
 
-      Chaplin.mediator.publish('unselect:shape');
-
       this.model.relations.times.fetch({
         eager:true
       });
 
-      this.$('.alert').hide();
       this.open();
     },
 
